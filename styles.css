@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --primary-color : #FF6A00;
+    --primary-grad-end: #F6405E;
+    --primary-text-color: #fff
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto',Arial, Helvetica, sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+
+
+/* Hero Section */
+
+#hero {
+    height: 100vh;
+    width: 100vw;
+}
+
+#hero-image {
+    object-fit: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Header */
+
+header {
+    position: absolute;
+    inset: 0 0 0 0;
+    display: flex;
+    padding: 4rem 2rem;
+    justify-content: space-between;
+    align-items: center;
+    height: 7rem;
+}
+
+
+/* Nav Elements */
+
+.nav-logo {
+    height: 6rem;
+}
+
+.primary-navigation {
+    display: flex;
+    gap: 1rem;
+    padding: .5rem;
+}
+
+#nav-toggle {
+    position: absolute;
+    z-index: 1001;
+    right: 2rem;
+    width: 3rem;
+    height: 3rem;
+    background: url(./assets/icons/hamburgermenu.svg) round;
+    border: none;
+    display: none;
+    
+}
+
+.nav-link {
+    list-style: none;
+}
+
+.nav-link > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: .05rem;
+    color: var(--primary-text-color);
+}
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 480px) {
+    
+    html {
+        font-size: 45%;
+    }
+
+    /* Navbar */
+    
+    #nav-toggle {
+        display: block;
+    }
+
+    #nav-toggle[aria-expanded='true'] {
+        background: url(./assets/icons/hamburgerclose.svg) round;
+    }
+
+    .primary-navigation {
+        position: fixed;
+        inset: 0;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.507);
+        transform: translateX(100%);
+        transition: transform ease-in-out .3s;
+    }
+    
+    @supports (backdrop-filter: blur(1rem)) {
+        .primary-navigation {
+            backdrop-filter: blur(1rem);
+        }
+    }
+
+    .primary-navigation[data-visible='true'] {
+        transform : translateX(0)
+    }
+    
+    .nav-logo {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 60%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    html {
+        font-size: 80%;
+    }
+}
+    
