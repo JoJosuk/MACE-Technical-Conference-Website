@@ -6,6 +6,7 @@
     --primary-text-color: #fff;
     --additional-grad: #1185ea;
     --additional-grad-end: #a848b6;
+    --lighter-black: #222222;
 }
 
 * {
@@ -101,7 +102,7 @@ header {
     -webkit-background-clip: text;
     color: transparent;
     background-image: linear-gradient(90deg, var(--additional-grad) 0%, var(--additional-grad-end) 100%);
-    transition: color ease-in-out .2s;
+    transition: all ease-in-out .2s;
     scale: 1.1;
 }
 
@@ -173,7 +174,7 @@ header {
     font-size: 1.5rem;
     padding: 1.5rem 2.5rem;
     color: var(--primary-text-color);
-    border: var(--primary-text-color) 4px solid;
+    border: var(--primary-text-color) 3px solid;
     background: rgba(0, 0, 0, 0);
 }
 
@@ -266,36 +267,46 @@ header {
 
 
 }
+
+
 /*Icon section*/
 .icon-section{
     padding: 3rem;
     display: flex;
+    justify-content: space-evenly;
 
 }
+
+
 .icon-section img{
     width: 60%;
     height: 60%;
-    margin-top: 1.75rem;
+    margin: auto;
 }
-.iconbox{
-    width: 25%;
+
+.iconbox {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
 }
-.iconbox h1,h2{
-    color: #fff;
+
+
+.iconbox h1,h2 {
+    color: var(--primary-text-color);
     text-align: center;
 }
+
 .circle {
-    margin-left: 28.5%;
-    width: 10rem;
-    height: 10rem;
+    width: 6rem;
+    height: 6rem;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     background: linear-gradient(180deg, #FF6A00 0%, #F6405E 100%);
-
 }
+
 /*Agenda section*/
 #agenda {
     display: flex;
@@ -331,6 +342,8 @@ header {
     }
     
 }
+
+
 .flex-container div{
     flex:1 1 auto;
     width: 50%;
@@ -342,26 +355,112 @@ header {
     background-image: linear-gradient(180deg,#000000,#832C29);
 }
 
-h3{
+#agenda > h3 {
     z-index: 2;
     margin-top: 3rem;
     font-size: 5.75rem;
     font-weight: 600;
     background-image: linear-gradient(to left, #FF7707, #e48d1c);
     color: var(--primary-color);
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  text-align: center;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-align: center;
 }
 
 
-#agenda-img{
+#agenda-img {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
+
+
 h6{
     color: white;
     font-size: x-large;
+}
+
+
+/* Speakers Section */
+
+#speakers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    row-gap: 3rem;
+    
+}
+
+#speakers-heading {
+    background-clip: texts;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(180deg, var(--additional-grad) 0%, var(--additional-grad-end) 100%);
+    color: transparent;
+    font-size: 5rem;
+    text-align: center;
+    margin: 3rem;
+}
+
+.speaker {
+    background: #000;
+    color: var(--primary-text-color);
+    padding: 1rem;
+    width: 18rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+    border-radius: 20px;
+    border-top: 7px solid transparent;
+    border-right: 7px solid transparent;
+    background-image: linear-gradient(white, white),  linear-gradient(var(--additional-grad), var(--additional-grad-end));
+    color: black;
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.speaker:hover {
+    transform: translateY(-4px);
+    transition: all ease-in-out .3s;
+    background-image: linear-gradient(white, white), linear-gradient(var(--primary-color), var(--primary-grad-end));
+}
+
+
+.speaker > img {
+    object-fit: cover;
+    height: 10rem;
+}
+
+.speaker > p {
+    width: 90%;
+}
+
+.speaker-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.speaker-desc {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.speaker-links {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.speaker-links > img {
+    width: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    #speakers {
+        grid-template-columns: 1fr 1fr;
+    }
 }
