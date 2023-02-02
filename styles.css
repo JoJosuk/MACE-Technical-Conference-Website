@@ -265,7 +265,36 @@ header {
 
 
 }
+/*Icon section*/
+.icon-section{
+    padding: 3rem;
+    display: flex;
 
+}
+.icon-section img{
+    width: 60%;
+    height: 60%;
+    margin-top: 1.75rem;
+}
+.iconbox{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+.iconbox h1,h2{
+    color: #fff;
+    text-align: center;
+}
+.circle {
+    margin-left: 28.5%;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(180deg, #FF6A00 0%, #F6405E 100%);
+
+}
 /*Agenda section*/
 #agenda {
     display: flex;
@@ -277,10 +306,11 @@ header {
 
 
 .abox {
+    margin-top: -3.2rem;
     width: 90vw;
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 5px; 
-    margin: 5rem;
+    margin-bottom: 4rem;
     padding: 2rem;
 }
 
@@ -289,7 +319,17 @@ header {
     display: flex;
 }
 
-
+@media screen and (max-width: 480px){
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .circle{
+        margin-left: 10%;
+    }
+    
+}
 .flex-container div{
     flex:1 1 auto;
     width: 50%;
@@ -302,7 +342,9 @@ header {
 }
 
 h3{
-    font-size: 4.375rem;
+    z-index: 2;
+    margin-top: 3rem;
+    font-size: 5.75rem;
     font-weight: 600;
     background-image: linear-gradient(to left, #FF7707, #e48d1c);
     color: var(--primary-color);
