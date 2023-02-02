@@ -62,15 +62,15 @@ header {
     z-index: 1000;
     gap: 1rem;
     padding: .5rem;
-    backdrop-filter: blur(1rem);
+    backdrop-filter: blur(2rem);
 }
 
 #nav-toggle {
     position: absolute;
     z-index: 1001;
     right: 2rem;
-    width: 3rem;
-    height: 3rem;
+    width: 4rem;
+    height: 4rem;
     background: url(./assets/icons/hamburgermenu.svg) round;
     border: none;
     display: none;
@@ -87,6 +87,19 @@ header {
     font-weight: 500;
     letter-spacing: .05rem;
     color: var(--primary-text-color);
+}
+
+.nav-link[class*="active"] > a{
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(90deg, var(--primary-color) 0%, var(--primary-grad-end) 100%);
+}
+
+.nav-link:hover:not(.nav-link[class*="active"]) > a {
+
+    transition: color ease-in-out .5s;
+    scale: 1.01;
 }
 
 /* Hero Content */
@@ -155,21 +168,39 @@ header {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.5rem;
-    padding: 1.5rem 3rem;
+    padding: 1.5rem 2.5rem;
     color: var(--primary-text-color);
-    border: var(--primary-text-color) 3px solid;
+    border: var(--primary-text-color) 4px solid;
     background: rgba(0, 0, 0, 0);
 }
 
 #hero-button:hover {
-    border-image: linear-gradient(var(--primary-color), var(--primary-grad-end)) 30
+    border-image: linear-gradient(var(--primary-color), var(--primary-grad-end)) 30;
+
 }
 
 
 
 /* Media Queries */
 
+@media screen and (max-width: 1024px) {
+    html {
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 60%;
+    }
+    
+    
+}
+
+
+
 @media screen and (max-width: 480px) {
+    
     
     html {
         font-size: 45%;
@@ -195,6 +226,7 @@ header {
         background-color: rgba(0, 0, 0, 0.507);
         transform: translateX(100%);
         transition: transform ease-in-out .3s;
+        font-size: 2rem;
     }
     
     @supports (backdrop-filter: blur(1rem)) {
@@ -211,23 +243,25 @@ header {
         display: none;
     }
 
-}
+    #hero-cdandlogo {
+        flex-direction: column;
+        gap: 10rem;
+    }
 
-@media screen and (max-width: 768px) {
-    html {
-        font-size: 60%;
+    #countdown-timer {
+        order: 1;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        aspect-ratio: auto;
+        background: linear-gradient(90deg, var(--primary-color) 0%, var(--primary-grad-end) 100%);
+
+    }
+
+    #countdown-timer > hr {
+        display: none;
     }
 
 
 }
-
-@media screen and (max-width: 1024px) {
-    html {
-        font-size: 80%;
-    }
-}
-
-
 
 /*Agenda section*/
 #agenda {
@@ -265,10 +299,10 @@ header {
 }
 
 h3{
-  font-size: 4.375rem;
-  font-weight: 600;
-  background-image: linear-gradient(to left, #FF7707, #e48d1c);
-  color: var(--primary-color);
+    font-size: 4.375rem;
+    font-weight: 600;
+    background-image: linear-gradient(to left, #FF7707, #e48d1c);
+    color: var(--primary-color);
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
