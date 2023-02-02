@@ -3,7 +3,9 @@
 :root {
     --primary-color : #FF6A00;
     --primary-grad-end: #F6405E;
-    --primary-text-color: #fff
+    --primary-text-color: #fff;
+    --additional-grad: #1185ea;
+    --additional-grad-end: #a848b6;
 }
 
 * {
@@ -16,8 +18,6 @@
 body {
     overflow-x: hidden;
 }
-
-
 
 
 /* Hero Section */
@@ -89,7 +89,7 @@ header {
     color: var(--primary-text-color);
 }
 
-.nav-link[class*="active"] > a{
+.nav-link[class*="active"] > a {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -97,9 +97,12 @@ header {
 }
 
 .nav-link:hover:not(.nav-link[class*="active"]) > a {
-
-    transition: color ease-in-out .5s;
-    scale: 1.01;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(90deg, var(--additional-grad) 0%, var(--additional-grad-end) 100%);
+    transition: color ease-in-out .2s;
+    scale: 1.1;
 }
 
 /* Hero Content */
@@ -176,14 +179,14 @@ header {
 
 #hero-button:hover {
     border-image: linear-gradient(var(--primary-color), var(--primary-grad-end)) 30;
-
 }
 
 
 
 /* Media Queries */
 
-@media screen and (max-width: 1024px) {
+
+@media screen and (min-width: 1024px) {
     html {
         font-size: 80%;
     }
