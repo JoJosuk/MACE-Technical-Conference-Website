@@ -196,10 +196,8 @@ header {
     html {
         font-size: 60%;
     }
-    
-    
+        
 }
-
 
 
 @media screen and (max-width: 480px) {
@@ -213,10 +211,13 @@ header {
     
     #nav-toggle {
         display: block;
+        transition: transform .3s ease-in;
     }
 
     #nav-toggle[aria-expanded='true'] {
         background: url(./assets/icons/hamburgerclose.svg) round;
+        transform: rotate(90deg);
+        transition: transform .3s ease-in;
     }
 
     .primary-navigation {

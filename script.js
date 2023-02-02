@@ -30,7 +30,7 @@ navLinks.forEach((navLink) => {
 
 // Countdown Timer
 
-const eventDate = new Date("Jun 18, 2023 08:00:00").getTime()
+const eventDate = new Date("Jun 17, 2023 08:00:00").getTime()
 
 const countDown = setInterval(() => {
     const currentDate = new Date().getTime()
