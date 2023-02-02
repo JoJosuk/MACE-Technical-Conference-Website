@@ -25,6 +25,11 @@ body {
 #hero {
     height: 100vh;
     width: 100vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #hero-image {
@@ -54,8 +59,10 @@ header {
 
 .primary-navigation {
     display: flex;
+    z-index: 1000;
     gap: 1rem;
     padding: .5rem;
+    backdrop-filter: blur(1rem);
 }
 
 #nav-toggle {
@@ -80,6 +87,82 @@ header {
     font-weight: 500;
     letter-spacing: .05rem;
     color: var(--primary-text-color);
+}
+
+/* Hero Content */
+
+#hero-content {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5rem;
+}
+
+/* For aligning the countdown and logo */
+#hero-cdandlogo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+/* Countdown Timer */
+
+#countdown-timer {
+    padding: 2rem;
+    display: grid;
+    aspect-ratio: 1 / 1;
+    background: linear-gradient(180deg, var(--primary-color) 0%, var(--primary-grad-end) 100%);
+    border-radius: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    color: var(--primary-text-color);
+    text-align: center;
+}
+
+
+#countdown-timer > hr {
+    grid-column: span 2;
+    margin: 1rem 0;
+    height: .3rem;
+    background: var(--primary-text-color);
+}
+
+.time-value {
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+
+.time-format {
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+
+#hero-logo > img {
+    width: 45rem;
+    /* height: 5rem; */
+}
+
+
+
+/* Hero Button */
+#hero-button {
+    margin: auto;    
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 1.5rem 3rem;
+    color: var(--primary-text-color);
+    border: var(--primary-text-color) 3px solid;
+    background: rgba(0, 0, 0, 0);
+}
+
+#hero-button:hover {
+    border-image: linear-gradient(var(--primary-color), var(--primary-grad-end)) 30
 }
 
 
@@ -134,6 +217,8 @@ header {
     html {
         font-size: 60%;
     }
+
+
 }
 
 @media screen and (max-width: 1024px) {
@@ -142,16 +227,18 @@ header {
     }
 }
 
+
+
 /*Agenda section*/
 #agenda {
-    
-    
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
+
+
 .abox {
     width: 90vw;
     background-color: rgba(0, 0, 0, 0.4);
@@ -159,9 +246,13 @@ header {
     margin: 5rem;
     padding: 2rem;
 }
+
+
 .flex-container{
     display: flex;
 }
+
+
 .flex-container div{
     flex:1 1 auto;
     width: 50%;
@@ -177,11 +268,14 @@ h3{
   font-size: 4.375rem;
   font-weight: 600;
   background-image: linear-gradient(to left, #FF7707, #e48d1c);
+  color: var(--primary-color);
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
   text-align: center;
 }
+
+
 #agenda-img{
     width: 100%;
     height: 100%;

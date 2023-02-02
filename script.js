@@ -41,5 +41,15 @@ const countDown = setInterval(() => {
     const minutes = Math.floor((timeToEvent % (1000 * 60 * 60)) / (1000 * 60)); 
     const seconds = Math.floor((timeToEvent % (1000 * 60)) / 1000);
 
+    document.querySelector('#days-value').innerHTML = days
+    document.querySelector('#hours-value').innerHTML = hours
+    document.querySelector('#mins-value').innerHTML = minutes
+    document.querySelector('#secs-value').innerHTML = seconds
     
+
 }, 1000);
+
+
+document.querySelector('#hero-button').addEventListener('click', () => {
+    console.log('hello')
+})
