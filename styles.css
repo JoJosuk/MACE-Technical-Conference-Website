@@ -371,12 +371,14 @@ header {
 
 
 .abox {
-    margin-top: -3.2rem;
+    
     width: 90vw;
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 5px; 
     margin-bottom: 4rem;
+    margin-top: 4rem;
     padding: 2rem;
+    padding-right: 0%;
 }
 
 
@@ -399,21 +401,21 @@ header {
 
 .flex-container div{
     flex:1 1 auto;
-    width: 50%;
-    height: 50%;
+    
     margin: 3rem;
 }
 
 .grad {
-    background-image: linear-gradient(180deg,#000000,#832C29);
+    background-image: url(./assets/images/abstract-image-of-blue-white-marbling.jpg);
+    background-size: cover;
+    
 }
 
-#agenda > h3 {
+ .agenda-box h3 {
     z-index: 2;
-    margin-top: 3rem;
     font-size: 5.75rem;
     font-weight: 600;
-    background-image: linear-gradient(to left, #FF7707, #e48d1c);
+    background-image: linear-gradient(to left, #1185EA, #A00F92);
     color: var(--primary-color);
     color: transparent;
     background-clip: text;
@@ -421,7 +423,11 @@ header {
     text-align: center;
 }
 
-
+.agenda-box{
+    display: flex;
+    flex-direction: column;
+    
+}
 #agenda-img {
     width: 100%;
     height: 100%;
@@ -430,11 +436,23 @@ header {
 
 
 h6{
-    color: white;
+    color: black;
     font-size: x-large;
+    text-align: left;
 }
+.abbox{
+    background-color: #D9D9D9;
+    border-left: solid #161464;
+    border-width: 1rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 0rem;
 
-
+}
+.agenda-img-box{
+    background-color: #D9D9D9;
+    padding: 0rem;
+}
 /* Speakers Section */
 
 #speakers {
