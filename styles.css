@@ -16,6 +16,7 @@
 }
 
 * {
+    outline: 2px solid blue;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -202,6 +203,46 @@ header {
     html {
         font-size: 60%;
     }
+
+        /* Navbar */
+    
+        #nav-toggle {
+            display: block;
+            transition: transform .3s ease-in;
+        }
+    
+        #nav-toggle[aria-expanded='true'] {
+            background: url(./assets/icons/hamburgerclose.svg) round;
+            transform: rotate(90deg);
+            transition: transform .3s ease-in;
+        }
+    
+        .primary-navigation {
+            position: fixed;
+            inset: 0;
+            align-items: center;
+            justify-content: center;
+            gap: 4rem;
+            flex-direction: column;
+            background-color: rgba(0, 0, 0, 0.507);
+            transform: translateX(100%);
+            transition: transform ease-in-out .3s;
+            font-size: 2rem;
+        }
+        
+        @supports (backdrop-filter: blur(1rem)) {
+            .primary-navigation {
+                backdrop-filter: blur(1rem);
+            }
+        }
+    
+        .primary-navigation[data-visible='true'] {
+            transform : translateX(0)
+        }
+        
+        .nav-logo {
+            display: none;
+        }
         
 }
 
@@ -213,45 +254,7 @@ header {
         font-size: 45%;
     }
 
-    /* Navbar */
-    
-    #nav-toggle {
-        display: block;
-        transition: transform .3s ease-in;
-    }
 
-    #nav-toggle[aria-expanded='true'] {
-        background: url(./assets/icons/hamburgerclose.svg) round;
-        transform: rotate(90deg);
-        transition: transform .3s ease-in;
-    }
-
-    .primary-navigation {
-        position: fixed;
-        inset: 0;
-        align-items: center;
-        justify-content: center;
-        gap: 4rem;
-        flex-direction: column;
-        background-color: rgba(0, 0, 0, 0.507);
-        transform: translateX(100%);
-        transition: transform ease-in-out .3s;
-        font-size: 2rem;
-    }
-    
-    @supports (backdrop-filter: blur(1rem)) {
-        .primary-navigation {
-            backdrop-filter: blur(1rem);
-        }
-    }
-
-    .primary-navigation[data-visible='true'] {
-        transform : translateX(0)
-    }
-    
-    .nav-logo {
-        display: none;
-    }
 
     #hero-cdandlogo {
         flex-direction: column;
@@ -655,15 +658,16 @@ h6{
 }
 
 .track-info {
-    display: none;
-    height: 40rem;
+    height: 0;
+    overflow: hidden;
 
     position: relative;
     background-size: cover;
 }
 
 .track-container[data-visible='true'] > .track-info {
-    display: block;
+    height: 45rem;
+    transition: height linear 0.4s;
 }
 
 .track-info-overlay {

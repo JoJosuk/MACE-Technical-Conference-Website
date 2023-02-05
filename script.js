@@ -92,5 +92,6 @@ trackHeadingContainer.forEach((track) => {
         console.log(trackContainer)
         trackContainer.setAttribute('data-visible', 'true')
 
+
     })
 })
