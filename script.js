@@ -72,3 +72,25 @@ buttons.forEach(button => {
       delete activeSlide.dataset.active
     })
   })
+
+
+// Tracks Section
+
+const trackHeadingContainer = document.querySelectorAll('.track-heading-container')
+
+trackHeadingContainer.forEach((track) => {
+    track.addEventListener('click', (e) => {
+
+        console.log(e.target)
+        let trackContainer = e.target.parentNode;
+        if (e.target.className == 'track-heading') {
+            trackContainer = e.target.parentNode.parentNode
+        }
+
+        const currTrack = document.querySelector('[data-visible="true"]')
+        currTrack.setAttribute('data-visible', 'false')
+        console.log(trackContainer)
+        trackContainer.setAttribute('data-visible', 'true')
+
+    })
+})

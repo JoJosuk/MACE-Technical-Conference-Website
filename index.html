@@ -19,10 +19,10 @@
             <button title = "nav-toggle" id="nav-toggle" aria-expanded="false"></button>
             <ul class="primary-navigation" data-visible = "false">
                 <li class="nav-link active"><a href="">About the Institute</a></li>
-                <li class="nav-link"><a href="">Event Overview</a></li>
-                <li class="nav-link"><a href="">Schedule</a></li>
-                <li class="nav-link"><a href="">Tracks</a></li>
-                <li class="nav-link"><a href="">Speakers</a></li>
+                <li class="nav-link"><a href="#about-section">Event Overview</a></li>
+                <li class="nav-link"><a href="#schedule-section">Schedule</a></li>
+                <li class="nav-link"><a href="#tracks-section">Tracks</a></li>
+                <li class="nav-link"><a href="#speakers-section">Speakers</a></li>
                 <li class="nav-link"><a href="">Call for Papers</a></li>
                 <li class="nav-link"><a href="">Connect</a></li>
             </ul>
@@ -53,9 +53,7 @@
     </section>
 
 
-    
-    
-        <div class="icon-section">
+        <!-- <div class="icon-section">
                 <div class="iconbox">
                     <div class="circle"><img src="assets\images\minicon1.svg" alt=""></div>
                     <h1>500+</h1>
@@ -77,7 +75,7 @@
                     <h2>Members</h2>
                 </div>
         </div>
-        <div class="about">
+        <div id="about-section" class="about">
             <div class="about-box">
                 <div class="sideytvdo">
                     <iframe width="480" height="315" src="https://www.youtube.com/embed/qzCPfxxmkaA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -118,7 +116,7 @@
                 </div>
                 </div>
             </div>
-            <div class="schedule" data-carousel>
+            <div id="schedule-section" class="schedule" data-carousel>
                 <h2>SCHEDULE</h2>
                 <button class="carousel-button prev" data-carousel-button="prev"><</button>
                 <button class="carousel-button next" data-carousel-button="next">></button>
@@ -149,7 +147,7 @@
             </div>
         
         </section>
-    </div>
+    </div> -->
    <!-- <div id="college-about">
         <div id="college-about-content">
             <h3>About the Institute</h3>
@@ -171,7 +169,7 @@
                     <div class="track-number-container">1</div>
                     <p class="track-heading">Communication and Computer Networks</p>
                 </div>
-                <div class="track-info">
+                <div class="track-info" style="background-image: url(./assets/images/college.jpg);">
                     <div class="track-info-overlay">
                         <p>Network communication, or internetworking, 
                             defines a set of protocols (that is, rules and standards) 
@@ -187,9 +185,21 @@
                     <div class="track-number-container">2</div>
                     <p class="track-heading">VLSI and Embedded Systems</p>
                 </div>
-                <div class="track-info">
+                <div class="track-info" style="background-image: url('/assets/images/heroimage.jpg');">
                     <div class="track-info-overlay">
                         <p>VLSI or rather Very Large Integrated Circuits are pretty cool ngl
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="track-container" data-visible="false">
+                <div class="track-heading-container">
+                    <div class="track-number-container">2</div>
+                    <p class="track-heading">Artificial Intelligence and Machine Learning</p>
+                </div>
+                <div class="track-info" style="background-image: url('/assets/images/abstract-image-of-blue-white-marbling.jpg')" >
+                    <div class="track-info-overlay">
+                        <p>Artificial intelligence (AI) is the ability of a computer or a robot controlled by a computer to do tasks that are usually done by humans because they require human intelligence and discernment.
                         </p>
                     </div>
                 </div>
@@ -198,9 +208,42 @@
         </div>
     </section>
     
-    <section>
+    <section id="speakers-section">
         <h3 id="speakers-heading">SPEAKERS</h3>
         <div id="speakers">
+            <div class="speaker">
+                <img src="./assets/speakers/personplaceholder.png" alt="">
+                <p class="speaker-name">Mr. Speaker NuUno</p>
+                <p class="speaker-desc">This is a random somebody from somewhere</p>
+                <hr>
+                <div class="speaker-links">
+                    <img src="./assets/icons/linkedin-app-icon.png" alt="">
+                    <img src="./assets/icons/github-icon.png" alt="">
+                    <img src="./assets/icons/twitter-logo.png" alt="">
+                </div>
+            </div>
+            <div class="speaker">
+                <img src="./assets/speakers/personplaceholder.png" alt="">
+                <p class="speaker-name">Mr. Speaker NuUno</p>
+                <p class="speaker-desc">This is a random somebody from somewhere</p>
+                <hr>
+                <div class="speaker-links">
+                    <img src="./assets/icons/linkedin-app-icon.png" alt="">
+                    <img src="./assets/icons/github-icon.png" alt="">
+                    <img src="./assets/icons/twitter-logo.png" alt="">
+                </div>
+            </div>
+            <div class="speaker">
+                <img src="./assets/speakers/personplaceholder.png" alt="">
+                <p class="speaker-name">Mr. Speaker NuUno</p>
+                <p class="speaker-desc">This is a random somebody from somewhere</p>
+                <hr>
+                <div class="speaker-links">
+                    <img src="./assets/icons/linkedin-app-icon.png" alt="">
+                    <img src="./assets/icons/github-icon.png" alt="">
+                    <img src="./assets/icons/twitter-logo.png" alt="">
+                </div>
+            </div>
             <div class="speaker">
                 <img src="./assets/speakers/personplaceholder.png" alt="">
                 <p class="speaker-name">Mr. Speaker NuUno</p>
