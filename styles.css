@@ -11,6 +11,8 @@
     --lighter-black: #222222;
     --gray-theme: #D9D9D9;
     --echo-black: #000000;
+    --icon-grad-start: #A4BFEF;
+    --icon-grad-end: #6A93CB;
 }
 
 * {
@@ -317,7 +319,7 @@ footer > p,a{
     padding: 3rem;
     display: flex;
     justify-content: space-evenly;
-    background: white;
+    background:#EAEEF2;
 }
 
 
@@ -351,6 +353,7 @@ footer > p,a{
 }
 
 /* About the College */
+
 
 #college-about {
     height: 50rem;
@@ -632,10 +635,13 @@ footer > p,a{
 .flex-container div{
     flex:1 1 auto;
 }
-
-.grad {
+.grad-img{
     background-image: url(./assets/images/abstract-image-of-blue-white-marbling.jpg);
+}
+.grad {
+    
     /*background-size: cover;*/
+    background-color: rgb(234, 238, 242,0.3);
     width: 100%;
     background-size: cover;
     padding: 2rem;
@@ -713,7 +719,7 @@ h6{
 }
 .schedule-box{
     width: 70vw;
-    
+    border: 2px solid #000000;
     background: var(--gray-theme);
     border-radius: 20px;
     padding: 1rem;
@@ -741,6 +747,7 @@ h6{
     display: inline ;
     font-size: large;
     font-weight: 700;
+    
 }
 .schedule-box h1{
     color: var(--primary-color);
@@ -904,6 +911,40 @@ h6{
 		background-position: 0% 50%;
 	}
 }
+.test-background{
+    background-color: #EAEEF2;
 
+}
+/* About the College */
+.about{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #EAEEF2;
+}
+.about-box{
+    width: 90vw;
+    display: flex;
+    background-color: var(--primary-text-color);
+    box-shadow: 0 8px 8px -4px var(--lighter-black);
+    margin: 2rem;
+    margin-bottom: 4rem;
+    padding: 2rem;
+    border-radius: 0.5rem;
 
+}
+.about-text{
+    padding: 1rem;
+}
+.about-text h1{
+    padding-bottom: 0.1rem;
 
+    
+    border-bottom: solid var(--echo-black);
+    width: max-content;
+    
+}
+.about-text p{
+    font-size: 1.5rem;
+    margin-top: 2.5rem;
+}
