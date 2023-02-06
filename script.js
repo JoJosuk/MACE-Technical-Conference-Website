@@ -53,7 +53,7 @@ const countDown = setInterval(() => {
 document.querySelector('#hero-button').addEventListener('click', () => {
     console.log('hello')
 })
-//schedule secton
+//schedule section
 
 const buttons = document.querySelectorAll("[data-carousel-button]")
 

@@ -645,7 +645,6 @@ footer > p,a{
     width: 100%;
     background-size: cover;
     padding: 2rem;
-    padding-bottom: 420px;
 }
 
  .agenda-text h3 {
@@ -705,7 +704,18 @@ h6{
     margin: 1rem;
 }
 /*Schedule section*/
-.schedule h2{
+
+#schedule-section{
+    position: relative;
+    
+    
+}
+.sch{
+    position: relative;
+    height: 500px;
+}
+
+#agenda h2,.schedule h2{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -717,10 +727,7 @@ h6{
     -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: black;
 }
-.schedule{
-    position:relative
-    
-}
+
 .schedule-box{
     width: 70vw;
     border: 2px solid #000000;
@@ -730,7 +737,11 @@ h6{
     padding-bottom: 6rem;
 }
 @media screen and (max-width: 900px) {
+    .sch{
+        height:300px;
+    }
     .schedule-box{
+        margin-top: 25%;
         width: 100%;
     }
     .schedule h2{
@@ -738,17 +749,21 @@ h6{
         text-align: center;
     }
     .schedule-box{
-        width: 60vw;
+        width: 70%;
         margin-left: 2.5rem ;
         margin-bottom: 1rem;
     }
     .carousel-button{
-        width: 1rem;
-        height: 1rem;
-        font-size: 0.5rem;
+        width: 0.5rem;
+        height: 0.5rem;
+        font-size: 0.2rem;
+        margin:0px;
+        position: absolute;
+        top: 50%;
     }
     .carousel-button.prev{
-        left:2px;
+        left:0px;
+        z-index: 2;
     }
     .carousel-button.next{
         right:0px;
@@ -797,15 +812,19 @@ h6{
 }
 .carousel-button{
     border-radius: 50%;
-    width: 10rem;
-    height: 10rem;
+    width: 5rem;
+    height: 5rem;
     font-size: 5rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
     color: var(--primary-text-color);
     background-color: rgba(0, 0, 0, 0);
     border: 0rem;
     transform: translateY(-50%);
     position: absolute;
     margin-top: 10rem;
+    z-index: 2;
 }
 .carousel-button:hover{
     color:var(--lighter-black);
