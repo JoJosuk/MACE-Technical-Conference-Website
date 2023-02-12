@@ -28,6 +28,18 @@ navLinks.forEach((navLink) => {
 })
 
 
+// Navbar button reponse
+
+const navLinksAnchor = document.querySelectorAll('.nav-link a')
+navLinksAnchor.forEach((navLink) => {
+    navLink.addEventListener('click', (e) => {
+        navLinksAnchor.forEach((anchor) => {
+            anchor.parentNode.classList.remove("active")
+        })
+        e.currentTarget.parentNode.className += " active"
+    })
+})
+
 // Countdown Timer
 
 const eventDate = new Date("Jun 17, 2023 08:00:00").getTime()
@@ -75,7 +87,163 @@ buttons.forEach(button => {
   })
 
 
+
+
 // Tracks Section
+
+
+
+
+let tracksContainer = document.querySelector('#tracks-container')
+
+let tracks = [
+    {
+        "category": "Mechanical Engineering",
+        "trackName" : "Thermal Sciences and Design Engineering",
+        "imgUrl" : './assets/images/college.jpg',
+        "info":"heloo there"
+    },
+    {
+        "category": "Mechanical Engineering",
+        "trackName" : "Materials Industrial and Manufacturing Engineering",
+        "imgUrl" : './assets/images/heroimage.jpg',
+        "info":"heloo there"
+    },
+    {
+        "category": "Science",
+        "trackName" : "Nano Science",
+        "imgUrl" : './assets/images/heroimage.jpg',
+        "info":"heloo there"
+    },
+    {
+        "category": "Science",
+        "trackName" : "Basic Sciences",
+        "imgUrl" : './assets/images/heroimage.jpg',
+        "info":"heloo there"
+    },
+    {
+        "category": "Electronics and Communications Engineering",
+        "trackName" : "VLSI and Embedded Systems",
+        "imgUrl" : './assets/images/heroimage.jpg',
+        "info":"heloo there"
+    },
+    {
+        "category": "Electronics and Communications Engineering",
+        "trackName" : "Communication and Computer networks",
+        "imgUrl" : './assets/images/heroimage.jpg',
+        "info":"heloo there"
+    },
+    {
+        "category": "Electronics and Communications Engineering",
+        "trackName" : "Signal Processing ",
+        "imgUrl" : './assets/images/heroimage.jpg',
+        "info":"heloo there"
+    },
+    {
+        "category": "Electronics and Communications Engineering",
+        "trackName" : "Robotics and Automation",
+        "imgUrl" : './assets/images/heroimage.jpg',
+        "info":"heloo there"
+    },
+    {
+        "category": "Electrical and Electronics Engineering",
+        "trackName" : "Power electronics, power systems and drives",
+        "imgUrl" : './assets/images/heroimage.jpg',
+        "info":"heloo there"
+    },
+    {
+        "category": "Electrical and Electronics Engineering",
+        "trackName" : "Control and Instrumentation",
+        "imgUrl" : './assets/images/heroimage.jpg',
+        "info":"heloo there"
+    },
+    {
+        "category": "Electrical and Electronics Engineering",
+        "trackName" : "Green and sustainable Engineering",
+        "imgUrl" : './assets/images/heroimage.jpg',
+        "info":"heloo there"
+    },
+    {
+        "category": "Civil Engineering",
+        "trackName" : "Material and structural mechanics",
+        "imgUrl" : './assets/images/heroimage.jpg',
+        "info":"heloo there"
+    },
+    {
+        "category": "Civil Engineering",
+        "trackName" : "Soil and water sciences",
+        "imgUrl" : './assets/images/heroimage.jpg',
+        "info":"heloo there"
+    },
+    {
+        "category": "Computer Science and Engineering",
+        "trackName" : "AI and ML",
+        "imgUrl" : './assets/images/heroimage.jpg',
+        "info":"heloo there"
+    },
+    {
+        "category": "Computer Science and Engineering",
+        "trackName" : "Social Network Analysis and Algorithms",
+        "imgUrl" : './assets/images/heroimage.jpg',
+        "info":"heloo there"
+    },
+    {
+        "category": "Computer Science and Engineering",
+        "trackName" : "Systems and infrastructure for the web",
+        "imgUrl" : './assets/images/heroimage.jpg',
+        "info":"heloo there"
+    },
+    {
+        "category": "Computer Science and Engineering",
+        "trackName" : "Data Analytics",
+        "imgUrl" : './assets/images/heroimage.jpg',
+        "info":"heloo there"
+    },
+]
+
+// Track Renderer
+
+let count = 1
+tracks.forEach((track) => {
+    let trackContainer = document.createElement("div")
+    trackContainer.classList.add("track-container")
+    trackContainer.classList.add("hidden")
+    trackContainer.setAttribute('data-visible', 'false')
+    if (count == 1) {
+        trackContainer.setAttribute('data-visible', 'true')
+    }
+    let trackHeadingContainer = document.createElement("div")
+    trackHeadingContainer.classList.add("track-heading-container")
+    let trackNumberContainer = document.createElement("div")
+    trackNumberContainer.classList.add("track-number-container")
+    trackNumberContainer.innerHTML = count
+    let trackHeading = document.createElement("p")
+    trackHeading.classList.add("track-heading")
+    trackHeading.innerHTML=track['trackName']
+
+    trackHeadingContainer.appendChild(trackNumberContainer)
+    trackHeadingContainer.appendChild(trackHeading)
+
+
+    let trackInfo = document.createElement("div")
+    trackInfo.classList.add("track-info")
+    trackInfo.style.backgroundImage = `url( ${track['imgUrl']})`
+    // console.log(trackInfo.style)
+    let trackInfoOverlay = document.createElement("div")
+    trackInfoOverlay.classList.add("track-info-overlay")
+    let trackInfoText = document.createElement("p")
+    trackInfoText.innerHTML = track['info']
+    trackInfoOverlay.appendChild(trackInfoText)
+    trackInfo.appendChild(trackInfoOverlay)
+
+    trackContainer.appendChild(trackHeadingContainer)
+    trackContainer.appendChild(trackInfo)
+    tracksContainer.appendChild(trackContainer)
+    
+    count++
+})
+
+// Track Handler
 
 const trackHeadingContainer = document.querySelectorAll('.track-heading-container')
 
@@ -95,4 +263,25 @@ trackHeadingContainer.forEach((track) => {
 
 
     })
+})
+
+
+// Intersection Observer
+
+const hiddenElements = document.querySelectorAll('.hidden')
+console.log(hiddenElements)
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.remove('hidden')
+            entry.target.classList.add('show')
+        }
+    })
+}, {
+    threshold: .7
+})
+
+hiddenElements.forEach(ele => {
+    observer.observe(ele)
 })

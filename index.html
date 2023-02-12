@@ -19,11 +19,11 @@
             <button title = "nav-toggle" id="nav-toggle" aria-expanded="false"></button>
             <ul class="primary-navigation" data-visible = "false">
                 <li class="nav-link active"><a href="">About the Institute</a></li>
-                <li class="nav-link"><a href="#about-section">Event Overview</a></li>
+                <li class="nav-link"><a href="/index.html#about-section">Event Overview</a></li>
                 <li class="nav-link"><a href="#schedule-section">Schedule</a></li>
                 <li class="nav-link"><a href="#tracks-section">Tracks</a></li>
                 <li class="nav-link"><a href="#speakers-section">Speakers</a></li>
-                <li class="nav-link"><a href="">Call for Papers</a></li>
+                <li class="nav-link"><a href="committee.html#committee">Call for Papers</a></li>
                 <li class="nav-link"><a href="">Connect</a></li>
             </ul>
             <img class="nav-logo" src="./assets/logos/60 yrs MACE.png" alt="">
@@ -46,11 +46,6 @@
             <button title="hero-button" id="hero-button" type="button">Register Now</button>
         </div>
 
-
-        
-
-
-
             
         </div>
 
@@ -59,22 +54,22 @@
 
 
         <div class="icon-section">
-                <div class="iconbox">
+                <div class="iconbox hidden">
                     <div class="circle"><img src="assets\images\minicon1.svg" alt=""></div>
                     <h1>500+</h1>
                     <h2>Organizations</h2>
                 </div>
-                <div class="iconbox">
+                <div class="iconbox hidden">
                     <div class="circle"><img src="assets\images\minicon2.svg" alt=""></div>
                     <h1>350+</h1>
                     <h2>Papers</h2>
                 </div>
-                <div class="iconbox">
+                <div class="iconbox hidden">
                     <div class="circle"><img src="assets\images\minicon3.svg" alt=""></div>
                     <h1>1000+</h1>
                     <h2>Participations</h2>
                 </div>
-                <div class="iconbox">
+                <div class="iconbox hidden">
                     <div class="circle"><img src="assets\images\minicon4.svg" alt=""></div>
                     <h1>500+</h1>
                     <h2>Members</h2>
@@ -174,54 +169,14 @@
     <section id="tracks-section">
         <h3>Tracks</h3>
         <div id="tracks-container">
-            <div class="track-container" data-visible="true">
-                <div class="track-heading-container">
-                    <div class="track-number-container">1</div>
-                    <p class="track-heading">Communication and Computer Networks</p>
-                </div>
-                <div class="track-info" style="background-image: url(./assets/images/college.jpg);">
-                    <div class="track-info-overlay">
-                        <p>Network communication, or internetworking, 
-                            defines a set of protocols (that is, rules and standards) 
-                            that allow application programs to talk with each 
-                            other without regard to the hardware and 
-                            operating systems where they are run
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="track-container" data-visible="false">
-                <div class="track-heading-container">
-                    <div class="track-number-container">2</div>
-                    <p class="track-heading">VLSI and Embedded Systems</p>
-                </div>
-                <div class="track-info" style="background-image: url('/assets/images/heroimage.jpg');">
-                    <div class="track-info-overlay">
-                        <p>VLSI or rather Very Large Integrated Circuits are pretty cool ngl
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="track-container" data-visible="false">
-                <div class="track-heading-container">
-                    <div class="track-number-container">2</div>
-                    <p class="track-heading">Artificial Intelligence and Machine Learning</p>
-                </div>
-                <div class="track-info" style="background-image: url('/assets/images/abstract-image-of-blue-white-marbling.jpg')" >
-                    <div class="track-info-overlay">
-                        <p>Artificial intelligence (AI) is the ability of a computer or a robot controlled by a computer to do tasks that are usually done by humans because they require human intelligence and discernment.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+
         </div>
     </section>
     
     <section id="speakers-section">
-        <h3 id="speakers-heading">SPEAKERS</h3>
+        <h3 id="speakers-heading">KEYNOTE SPEAKERS</h3>
         <div id="speakers">
-            <div class="speaker">
+            <div class="speaker hidden">
                 <img src="./assets/speakers/personplaceholder.png" alt="">
                 <p class="speaker-name">Mr. Speaker NuUno</p>
                 <p class="speaker-desc">This is a random somebody from somewhere</p>
@@ -232,29 +187,7 @@
                     <img src="./assets/icons/twitter-logo.png" alt="">
                 </div>
             </div>
-            <div class="speaker">
-                <img src="./assets/speakers/personplaceholder.png" alt="">
-                <p class="speaker-name">Mr. Speaker NuUno</p>
-                <p class="speaker-desc">This is a random somebody from somewhere</p>
-                <hr>
-                <div class="speaker-links">
-                    <img src="./assets/icons/linkedin-app-icon.png" alt="">
-                    <img src="./assets/icons/github-icon.png" alt="">
-                    <img src="./assets/icons/twitter-logo.png" alt="">
-                </div>
-            </div>
-            <div class="speaker">
-                <img src="./assets/speakers/personplaceholder.png" alt="">
-                <p class="speaker-name">Mr. Speaker NuUno</p>
-                <p class="speaker-desc">This is a random somebody from somewhere</p>
-                <hr>
-                <div class="speaker-links">
-                    <img src="./assets/icons/linkedin-app-icon.png" alt="">
-                    <img src="./assets/icons/github-icon.png" alt="">
-                    <img src="./assets/icons/twitter-logo.png" alt="">
-                </div>
-            </div>
-            <div class="speaker">
+            <div class="speaker hidden">
                 <img src="./assets/speakers/personplaceholder.png" alt="">
                 <p class="speaker-name">Mr. Speaker NuUno</p>
                 <p class="speaker-desc">This is a random somebody from somewhere</p>
@@ -269,7 +202,9 @@
         </div>
 
     </section>
-    <section class="contact-us">
+
+
+    <!-- <section class="contact-us">
         <div class="contact-form">
             <div class="wrapper">
                 <h3>GET IN TOUCH</h3>
@@ -300,7 +235,8 @@
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.5490927558367!2d76.61699471523204!3d10.054016892814145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b07e6154a2133e5%3A0x2c26b2d532bb30ea!2sMar%20Athanasius%20College%20of%20Engineering%20-%20Kothamangalam!5e0!3m2!1sen!2sin!4v1675614809724!5m2!1sen!2sin"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-    </section>
+    </section> -->
+
     <footer>
         <div class="style-one">
             <hr>
