@@ -115,112 +115,110 @@ buttons.forEach(button => {
 // Tracks Section
 
 
-
-
 let tracksContainer = document.querySelector('#tracks-container')
 
 let tracks = [
     {
         "category": "Mechanical Engineering",
         "trackName" : "Thermal Sciences and Design Engineering",
-        "imgUrl" : 'https://polytech.univ-nantes.fr/medias/photo/20191507-communicationte-48_1571835439233-jpg',
-        "info":"heloo there"
+        "imgUrl" : './assets/images/tracks/20191507-communicationte-48_1571835439233-jpg.jpg',
+        "info":"Thermal engineering is a specialized sub-discipline of mechanical engineering that deals with the movement of heat energy and transfer."
     },
     {
         "category": "Mechanical Engineering",
         "trackName" : "Materials Industrial and Manufacturing Engineering",
-        "imgUrl" :'https://blogmech.com/wp-content/uploads/2019/07/d7fad-01-manufacturing-process-manufacturing-technology.jpg',
-        "info":"heloo there"
+        "imgUrl" :'./assets/images/tracks/d7fad-01-manufacturing-process-manufacturing-technology.jpg',
+        "info":"Materials and manufacturing engineering is highly interdisciplinary and focuses on the application of materials as well as process and production technologies in high-tech products."
     },
     {
         "category": "Science",
         "trackName" : "Nano Science",
-        "imgUrl" : 'https://wallpapercave.com/wp/wp2963735.jpg',
-        "info":"heloo there"
+        "imgUrl" : './assets/images/tracks/wp2963735.jpg',
+        "info":"Nanoscience is the use of matter on an atomic, molecular, and supramolecular scale for scientific purposes."
     },
     {
         "category": "Science",
         "trackName" : "Basic Sciences",
-        "imgUrl" : 'https://i.pinimg.com/originals/66/be/79/66be7922881ea8c3bcb1bd40ba12a797.jpg',
-        "info":"heloo there"
+        "imgUrl" : './assets/images/tracks/66be7922881ea8c3bcb1bd40ba12a797.jpg',
+        "info":"Basic sciences are scientific disciplines of mathematics, physics, chemistry, and biology."
     },
     {
         "category": "Electronics and Communications Engineering",
         "trackName" : "VLSI and Embedded Systems",
-        "imgUrl" : 'https://sru.edu.in/assets/schools/ece/ece.png',
-        "info":"heloo there"
+        "imgUrl" : './assets/images/tracks/ece.png',
+        "info":"Embedded systems design focuses on writing code that is implemented on a flexible piece of hardware, while VLSI focuses on translating programming instructions into a structure for an integrated circuit."
     },
     {
         "category": "Electronics and Communications Engineering",
         "trackName" : "Communication and Computer networks",
-        "imgUrl" : 'https://wallpapercave.com/wp/wp10616862.jpg',
-        "info":"heloo there"
+        "imgUrl" : './assets/images/tracks/wp10616862.jpg',
+        "info":"Data communications refers to the transmission of this digital data between two or more computers and a computer network or data network is a telecommunications network that allows computers to exchange data."
     },
     {
         "category": "Electronics and Communications Engineering",
         "trackName" : "Signal Processing ",
-        "imgUrl" : 'https://online.stanford.edu/sites/default/files/styles/widescreen_tiny/public/2018-03/ee_digitalsignalprocessing_ee264.jpg?h=66807ab2&itok=PTl4qQ9S',
-        "info":"heloo there"
+        "imgUrl" : './assets/images/tracks/SP.jpg',
+        "info":"Signal processing (DSP) is the use of computers or more specialized signal processors, to perform a wide variety of signal processing operations. "
     },
     {
         "category": "Electronics and Communications Engineering",
         "trackName" : "Robotics and Automation",
-        "imgUrl" : 'https://xcelacore.com/wp-content/uploads/2022/04/robotic-process-automation.jpg',
-        "info":"heloo there"
+        "imgUrl" : './assets/images/tracks/robotic-process-automation.jpg',
+        "info":"Industrial automation and robotics are the use of computers, control systems and information technology to handle industrial processes and machinery, replacing manual labour and improving efficiency, speed, quality and performance."
     },
     {
         "category": "Electrical and Electronics Engineering",
         "trackName" : "Power electronics, power systems and drives",
-        "imgUrl" : 'https://assets.skyfilabs.com/images/blog/good-power-electronics-project-ideas.webp',
-        "info":"heloo there"
+        "imgUrl" : './assets/images/tracks/good-power-electronics-project-ideas.webp',
+        "info":"Electrical machines need drive systems to be correctly controlled, if they need to be operated at variable speed. This can be achieved by modulating the energy flow to/from them. Power electronic devices help them for this process."
     },
     {
         "category": "Electrical and Electronics Engineering",
         "trackName" : "Control and Instrumentation",
-        "imgUrl" : 'https://alausat.ae/wp-content/uploads/2020/02/IC_Alausat-scaled.jpg',
-        "info":"heloo there"
+        "imgUrl" : './assets/images/tracks/IC_Alausat-scaled.jpg',
+        "info":"Instrumentation and Control is branch of engineering that deals with measurement & control."
     },
     {
         "category": "Electrical and Electronics Engineering",
         "trackName" : "Green and sustainable Engineering",
-        "imgUrl" : 'https://www.linkpicture.com/q/sustainabilitygreenworld.jpg',
-        "info":"heloo there"
+        "imgUrl" : './assets/images/tracks/sustainabilitygreenworld.jpg',
+        "info":"Design, commercialization, and use of processes and products in a way that reduces pollution, promotes sustainability, and minimizes risk to human health and the environment without sacrificing economic viability and efficiency."
     },
     {
         "category": "Civil Engineering",
         "trackName" : "Material and structural mechanics",
-        "imgUrl" : 'https://cee.utk.edu/wp-content/uploads/sites/15/2015/07/research-structure.jpg',
-        "info":"heloo there"
+        "imgUrl" : './assets/images/tracks/research-structure.jpg',
+        "info":"Field of applied mechanics in which you compute deformations, stresses, and strains in solid materials. Often, the purpose is to determine the strength of a structure, such as a bridge, in order to prevent damage or accidents."
     },
     {
         "category": "Civil Engineering",
         "trackName" : "Soil and water sciences",
-        "imgUrl" : 'https://www.montana.edu/academics/images/search/sea-soil-water-sciences.jpg',
-        "info":"heloo there"
+        "imgUrl" : './assets/images/tracks/sea-soil-water-sciences.jpg',
+        "info":"Soil and water sciences are interdisciplinary fields that focus on the study of soil, water, and their interactions in various ecosystems. They are important in understanding the natural processes that occur in the soil-water system, and how human activities impact these processes."
     },
     {
         "category": "Computer Science and Engineering",
         "trackName" : "AI and ML",
-        "imgUrl" : 'https://www.einfochips.com/blog/wp-content/uploads/2018/11/how-to-develop-machine-learning-applications-for-business-featured.jpg',
-        "info":"heloo there"
+        "imgUrl" : './assets/images/tracks/machine-learning.jpg',
+        "info":"Artificial Intelligence (AI) and Machine Learning (ML) are subsets of computer science that focus on creating algorithms and models that allow computers to perform tasks that typically require human intelligence, such as recognizing patterns, making predictions, and learning from experience."
     },
     {
         "category": "Computer Science and Engineering",
         "trackName" : "Social Network Analysis and Algorithms",
-        "imgUrl" : 'https://freerangeresearch.files.wordpress.com/2013/09/2013-09-15-16-45-17-1.jpg',
-        "info":"heloo there"
+        "imgUrl" : './assets/images/tracks/2013-09-15-16-45-17-1.jpg',
+        "info":"Social Network Analysis (SNA) is a field of study that focuses on the structure, dynamics, and behavior of social networks. It involves the collection, representation, and analysis of data about relationships and interactions among individuals or organizations in a social network. "
     },
     {
         "category": "Computer Science and Engineering",
         "trackName" : "Systems and infrastructure for the web",
-        "imgUrl" : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwVNtYyY-OrAgpMBCWi2o9G6UGraKdM3oVvg&usqp=CAU',
-        "info":"heloo there"
+        "imgUrl" : './assets/images/tracks/SI.jfif',
+        "info":"The web is a complex system that relies on various components working together to provide users with a seamless experience. These components include hardware, software, and network infrastructure, as well as protocols and standards that define the way information is transmitted and processed over the internet."
     },
     {
         "category": "Computer Science and Engineering",
         "trackName" : "Data Analytics",
-        "imgUrl" : 'https://d5zukw8vdn04n.cloudfront.net/wp-content/uploads/2019/12/shutterstock_606583169.jpg',
-        "info":"heloo there"
+        "imgUrl" : './assets/images/tracks/shutterstock_606583169.jpg',
+        "info":"Data analytics refers to the process of inspecting, cleaning, transforming, and modeling data with the goal of discovering useful information, suggesting conclusions, and supporting decision making."
     },
 ]
 
