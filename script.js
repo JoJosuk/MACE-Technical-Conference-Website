@@ -32,13 +32,15 @@ navLinks.forEach((navLink) => {
 
 window.onscroll = function() {scrollfn()}
 
-var currentStick = 100
+var currentStick = document.querySelector('#hero').scrollHeight;
 
 function scrollfn() {
     if (window.scrollY >= currentStick) {
         primaryNavigation.classList.add("sticky")
+        primaryNavigation.style.backgroundColor = "#0bceff"
     } else {
         primaryNavigation.classList.remove("sticky")
+        primaryNavigation.style.backgroundColor = ""
     }
 }
 
