@@ -100,103 +100,103 @@ let tracks = [
     {
         "category": "Mechanical Engineering",
         "trackName" : "Thermal Sciences and Design Engineering",
-        "imgUrl" : './assets/images/college.jpg',
+        "imgUrl" : 'https://polytech.univ-nantes.fr/medias/photo/20191507-communicationte-48_1571835439233-jpg',
         "info":"heloo there"
     },
     {
         "category": "Mechanical Engineering",
         "trackName" : "Materials Industrial and Manufacturing Engineering",
-        "imgUrl" : './assets/images/heroimage.jpg',
+        "imgUrl" :'https://blogmech.com/wp-content/uploads/2019/07/d7fad-01-manufacturing-process-manufacturing-technology.jpg',
         "info":"heloo there"
     },
     {
         "category": "Science",
         "trackName" : "Nano Science",
-        "imgUrl" : './assets/images/heroimage.jpg',
+        "imgUrl" : 'https://wallpapercave.com/wp/wp2963735.jpg',
         "info":"heloo there"
     },
     {
         "category": "Science",
         "trackName" : "Basic Sciences",
-        "imgUrl" : './assets/images/heroimage.jpg',
+        "imgUrl" : 'https://i.pinimg.com/originals/66/be/79/66be7922881ea8c3bcb1bd40ba12a797.jpg',
         "info":"heloo there"
     },
     {
         "category": "Electronics and Communications Engineering",
         "trackName" : "VLSI and Embedded Systems",
-        "imgUrl" : './assets/images/heroimage.jpg',
+        "imgUrl" : 'https://sru.edu.in/assets/schools/ece/ece.png',
         "info":"heloo there"
     },
     {
         "category": "Electronics and Communications Engineering",
         "trackName" : "Communication and Computer networks",
-        "imgUrl" : './assets/images/heroimage.jpg',
+        "imgUrl" : 'https://wallpapercave.com/wp/wp10616862.jpg',
         "info":"heloo there"
     },
     {
         "category": "Electronics and Communications Engineering",
         "trackName" : "Signal Processing ",
-        "imgUrl" : './assets/images/heroimage.jpg',
+        "imgUrl" : 'https://online.stanford.edu/sites/default/files/styles/widescreen_tiny/public/2018-03/ee_digitalsignalprocessing_ee264.jpg?h=66807ab2&itok=PTl4qQ9S',
         "info":"heloo there"
     },
     {
         "category": "Electronics and Communications Engineering",
         "trackName" : "Robotics and Automation",
-        "imgUrl" : './assets/images/heroimage.jpg',
+        "imgUrl" : 'https://xcelacore.com/wp-content/uploads/2022/04/robotic-process-automation.jpg',
         "info":"heloo there"
     },
     {
         "category": "Electrical and Electronics Engineering",
         "trackName" : "Power electronics, power systems and drives",
-        "imgUrl" : './assets/images/heroimage.jpg',
+        "imgUrl" : 'https://assets.skyfilabs.com/images/blog/good-power-electronics-project-ideas.webp',
         "info":"heloo there"
     },
     {
         "category": "Electrical and Electronics Engineering",
         "trackName" : "Control and Instrumentation",
-        "imgUrl" : './assets/images/heroimage.jpg',
+        "imgUrl" : 'https://alausat.ae/wp-content/uploads/2020/02/IC_Alausat-scaled.jpg',
         "info":"heloo there"
     },
     {
         "category": "Electrical and Electronics Engineering",
         "trackName" : "Green and sustainable Engineering",
-        "imgUrl" : './assets/images/heroimage.jpg',
+        "imgUrl" : 'https://www.linkpicture.com/q/sustainabilitygreenworld.jpg',
         "info":"heloo there"
     },
     {
         "category": "Civil Engineering",
         "trackName" : "Material and structural mechanics",
-        "imgUrl" : './assets/images/heroimage.jpg',
+        "imgUrl" : 'https://cee.utk.edu/wp-content/uploads/sites/15/2015/07/research-structure.jpg',
         "info":"heloo there"
     },
     {
         "category": "Civil Engineering",
         "trackName" : "Soil and water sciences",
-        "imgUrl" : './assets/images/heroimage.jpg',
+        "imgUrl" : 'https://www.montana.edu/academics/images/search/sea-soil-water-sciences.jpg',
         "info":"heloo there"
     },
     {
         "category": "Computer Science and Engineering",
         "trackName" : "AI and ML",
-        "imgUrl" : './assets/images/heroimage.jpg',
+        "imgUrl" : 'https://www.einfochips.com/blog/wp-content/uploads/2018/11/how-to-develop-machine-learning-applications-for-business-featured.jpg',
         "info":"heloo there"
     },
     {
         "category": "Computer Science and Engineering",
         "trackName" : "Social Network Analysis and Algorithms",
-        "imgUrl" : './assets/images/heroimage.jpg',
+        "imgUrl" : 'https://freerangeresearch.files.wordpress.com/2013/09/2013-09-15-16-45-17-1.jpg',
         "info":"heloo there"
     },
     {
         "category": "Computer Science and Engineering",
         "trackName" : "Systems and infrastructure for the web",
-        "imgUrl" : './assets/images/heroimage.jpg',
+        "imgUrl" : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwVNtYyY-OrAgpMBCWi2o9G6UGraKdM3oVvg&usqp=CAU',
         "info":"heloo there"
     },
     {
         "category": "Computer Science and Engineering",
         "trackName" : "Data Analytics",
-        "imgUrl" : './assets/images/heroimage.jpg',
+        "imgUrl" : 'https://d5zukw8vdn04n.cloudfront.net/wp-content/uploads/2019/12/shutterstock_606583169.jpg',
         "info":"heloo there"
     },
 ]
