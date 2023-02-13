@@ -28,6 +28,20 @@ navLinks.forEach((navLink) => {
 })
 
 
+// Sticky Navbar
+
+window.onscroll = function() {scrollfn()}
+
+var currentStick = 100
+
+function scrollfn() {
+    if (window.scrollY >= currentStick) {
+        primaryNavigation.classList.add("sticky")
+    } else {
+        primaryNavigation.classList.remove("sticky")
+    }
+}
+
 // Navbar button reponse
 
 const navLinksAnchor = document.querySelectorAll('.nav-link a')
@@ -39,6 +53,11 @@ navLinksAnchor.forEach((navLink) => {
         e.currentTarget.parentNode.className += " active"
     })
 })
+
+// Navbar updation on scroll
+
+
+// let sections = document.querySelectorAll('section')
 
 // Countdown Timer
 
@@ -53,19 +72,23 @@ const countDown = setInterval(() => {
     const minutes = Math.floor((timeToEvent % (1000 * 60 * 60)) / (1000 * 60)); 
     const seconds = Math.floor((timeToEvent % (1000 * 60)) / 1000);
 
-    document.querySelector('#days-value').innerHTML = days
-    document.querySelector('#hours-value').innerHTML = hours
-    document.querySelector('#mins-value').innerHTML = minutes
-    document.querySelector('#secs-value').innerHTML = seconds
-    
+    var daysContainer = document.querySelector('#days-value')
+    if (daysContainer != null) {
+        document.querySelector('#days-value').innerHTML = days
+        document.querySelector('#hours-value').innerHTML = hours
+        document.querySelector('#mins-value').innerHTML = minutes
+        document.querySelector('#secs-value').innerHTML = seconds
+    }
 
 }, 1000);
 
 
-document.querySelector('#hero-button').addEventListener('click', () => {
-    console.log('hello')
-})
-//schedule section
+// document.querySelector('#hero-button').addEventListener('click', () => {
+//     console.log('hello')
+// })
+
+
+// Schedule section
 
 const buttons = document.querySelectorAll("[data-carousel-button]")
 
@@ -204,7 +227,11 @@ let tracks = [
 // Track Renderer
 
 let count = 1
+
 tracks.forEach((track) => {
+    if (tracksContainer == null) {
+        return
+    }
     let trackContainer = document.createElement("div")
     trackContainer.classList.add("track-container")
     trackContainer.classList.add("hidden")
@@ -250,7 +277,7 @@ const trackHeadingContainer = document.querySelectorAll('.track-heading-containe
 trackHeadingContainer.forEach((track) => {
     track.addEventListener('click', (e) => {
 
-        console.log(e.target)
+        // console.log(e.target)
         let trackContainer = e.target.parentNode;
         if (e.target.className == 'track-heading') {
             trackContainer = e.target.parentNode.parentNode
@@ -258,9 +285,10 @@ trackHeadingContainer.forEach((track) => {
 
         const currTrack = document.querySelector('[data-visible="true"]')
         currTrack.setAttribute('data-visible', 'false')
-        console.log(trackContainer)
+        // console.log(trackContainer)
         trackContainer.setAttribute('data-visible', 'true')
-
+        // console.log(e.target.getBoundingClientRect())
+        
 
     })
 })
@@ -269,13 +297,12 @@ trackHeadingContainer.forEach((track) => {
 // Intersection Observer
 
 const hiddenElements = document.querySelectorAll('.hidden')
-console.log(hiddenElements)
+// console.log(hiddenElements)
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.remove('hidden')
-            entry.target.classList.add('show')
         }
     })
 }, {

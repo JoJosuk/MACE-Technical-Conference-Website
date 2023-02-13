@@ -74,6 +74,17 @@ header {
     backdrop-filter: blur(2rem);
 }
 
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: center;
+    padding: 1rem;
+}
+
+
 #nav-toggle {
     position: absolute;
     z-index: 1001;
@@ -1104,6 +1115,7 @@ h6{
     /* border-radius: 1rem; */
     background-color: whitesmoke;
     width:17rem;
+    transition: all 1s;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -1111,9 +1123,18 @@ h6{
     text-align: center;
 }
 
+.committee-card.hidden {
+    transform: translateX(50%);
+    opacity: 0;
+}
+
 .committee-card > img {
     object-fit: cover;
     width: 100%;
+}
+
+.committee-card > p {
+    padding: .3rem;
 }
 
 .member-name {
