@@ -534,7 +534,7 @@ footer > p,a{
 }
 
 .track-info-overlay {
-    background: linear-gradient(180deg, rgba(27, 27, 27, 0) 0%, #000000 76.45%);
+    background: linear-gradient(180deg, rgba(27, 27, 27, 0) 0%, #000000 95.45%);
     height: 100%;
     width: 100%;
     display: flex;
@@ -1163,20 +1163,26 @@ h6{
     background: #000;
 }
 
-#hods {
+.committee-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5rem;
+}
+
+.organizing-committee-row {
+    display: flex;
+    justify-content: center;
     gap: 5rem;
 }
 
 @media screen and (max-width:1024px) {
-    #hods {
+    .committee-grid {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
 @media screen and (max-width:510px) {
-    #hods {
+    .committee-grid {
         grid-template-columns: 1fr 1fr;
     }
 }
