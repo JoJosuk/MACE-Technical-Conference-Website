@@ -43,6 +43,8 @@ body {
     opacity: 0;
     transition: .5s opacity;
 }
+
+
 #preloader{
     position:absolute;
     top:50%;
@@ -101,11 +103,12 @@ body {
     background-size: cover;
 }
 
+#hero-bg-video {
+    overflow: hidden;
+}
+
 #hero-bg-video > video {
-    /* display: block; */
-    height: 100vh;
-    width: 100%;
-    object-fit: cover;
+    width: 100vw;
 }
 
 

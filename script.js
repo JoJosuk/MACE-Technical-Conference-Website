@@ -7,6 +7,10 @@ window.onload = () => {
     let preloader = document.querySelector('#preloader-div')
     preloader.classList.add('fade')
     document.querySelector('body').style.overflowY = "scroll"
+
+    setTimeout(() => {
+        preloader.style.display = "none"
+    }, 1000);
 }
 
 // Responsive Navbar 
