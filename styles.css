@@ -25,9 +25,59 @@
 
 body {
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 
+/* Pre loader */
+
+#preloader-div {
+    inset: 0;
+    position: fixed;
+    z-index: 99999;
+    background: white;
+}
+
+#preloader{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    width:4rem;
+    height:4rem;
+}
+
+#preloader hr {
+    border:0;
+    margin:0;
+    width:40%;
+    height:40%;
+    position:absolute;
+    border-radius:50%;
+    animation:spin 2s ease infinite
+}
+
+  #preloader :first-child {
+    background:#19A68C;
+    animation-delay:-1.5s
+}
+  #preloader :nth-child(2) {
+    background:#F63D3A;
+    animation-delay:-1s
+}
+  #preloader :nth-child(3) {
+    background:#FDA543;
+    animation-delay:-0.5s
+}
+  #preloader :last-child {
+    background:#193B48}
+
+  @keyframes spin{
+    0%,100%{transform:translate(0)}
+    25%{transform:translate(160%)}
+    50%{transform:translate(160%, 160%)}
+    75%{transform:translate(0, 160%)}
+  }
 
 
 /* Hero Section */
@@ -44,6 +94,13 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+}
+
+#hero-bg-video > video {
+    /* display: block; */
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
 }
 
 
@@ -270,7 +327,7 @@ footer > p,a{
 }
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 580px) {
     
     
     html {
@@ -1292,13 +1349,13 @@ h6{
     gap: 5rem;
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1300px) {
     .committee-grid {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
-@media screen and (max-width:510px) {
+@media screen and (max-width:600px) {
     .committee-grid {
         grid-template-columns: 1fr 1fr;
     }
