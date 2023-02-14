@@ -110,6 +110,8 @@ body {
 
 #hero-bg-video > video {
     width: 100vw;
+    height: 100vh;
+    object-fit: fill;
 }
 
 
@@ -492,6 +494,7 @@ footer > p,a{
 }
 
 #about-content {
+    font-family: sans-serif;
     text-align: justify;
     font-size: 1.5rem;
     color: rgb(255, 255, 255);

@@ -109,7 +109,12 @@ This colloquium will off a wide platform to share vital and recent advances in E
 </br> </br> <i>Papers are invited to IC MACE 2023 on topics lying with the scope of the conference. The colloquium will offer multiple tracks in various Engineering and Management disciplines.</i> <br><br> 
 We are expecting quality research findings coming under these tracks and will also accept inter disciplinary Research papers. Selected papers from track will be published in Scopus Indexed International Journals`
 
-document.querySelector('#about-content').innerHTML = aboutContent
+let aboutSection = document.querySelector('#about-content')
+
+if (aboutSection != null) {
+    aboutSection.innerHTML = aboutContent
+}
+
 
 
 // Schedule section
