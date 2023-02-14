@@ -338,7 +338,7 @@ footer > p,a{
 }
 
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 480px) {
     
     
     html {
@@ -759,7 +759,7 @@ h6{
 .shedbox{
     background-image: url(./assets/images/IMG_9381.jpg);
     background-size: cover;
-    background-position: centre;
+    background-position: center;
     margin-right: 2rem;
     border-radius: 10px;
     mix-blend-mode: normal;
@@ -792,6 +792,7 @@ h6{
 
     
 }
+
 .timeline h3{
     font-family: 'Roboto';
     font-style: normal;
@@ -826,13 +827,14 @@ h6{
     border-radius:7px;
 }
 .box .line{
-    height:103px;
+    height:110px;
     width:2px;
     background: #D1D6E6;
     margin-left:5.3px;
 }
 .box .card{
-    width:249px;
+    width:100%;
+    height: 110px;
     padding-top:25px;
     box-shadow:0 2px 2px 0  #eeeeee40;
     background: var(--gray-theme);
@@ -863,7 +865,33 @@ h6{
     color: var(--lighter-black);
     margin-left:25px;
     margin-bottom: 10px;
+    margin-right: 40px;
  }
+
+ @media screen and (max-width: 425px) {
+    .timeline{
+        width:100%;
+        height: 100%;
+        padding-right: 20px;
+        overflow: visible;
+    }
+    
+    .box p{
+        margin-right: 10px;
+        font-size: 13px;
+        line-height: 16px;
+    }
+    
+    
+
+}
+@media screen and (max-width: 700px){
+    .schedflex{
+        flex-direction: column;
+    }
+}
+
+
 
 /*Schedule section*/
 
@@ -931,9 +959,7 @@ h6{
         right:0px;
         z-index: 2;
     }
-    .grad{
-        padding-bottom: 600px;
-    }
+    
 }
 
 .schedule-box h3{
@@ -1110,7 +1136,6 @@ h6{
     background-color: #EAEEF2;
 
 }
-
 
 
 
@@ -1342,13 +1367,13 @@ h6{
     gap: 5rem;
 }
 
-@media screen and (max-width:1300px) {
+@media screen and (max-width:1024px) {
     .committee-grid {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:510px) {
     .committee-grid {
         grid-template-columns: 1fr 1fr;
     }
