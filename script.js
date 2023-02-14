@@ -1,6 +1,13 @@
 "use strict"
 
 
+// Pre Loader
+
+window.onload = () => {
+    let preloader = document.querySelector('#preloader-div')
+    preloader.style.display = "none"
+}
+
 // Responsive Navbar 
 
 const primaryNavigation = document.querySelector('.primary-navigation')
