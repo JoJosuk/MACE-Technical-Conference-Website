@@ -6,6 +6,7 @@
 window.onload = () => {
     let preloader = document.querySelector('#preloader-div')
     preloader.style.display = "none"
+    document.querySelector('body').style.overflowY = "scroll"
 }
 
 // Responsive Navbar 
