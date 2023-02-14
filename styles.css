@@ -8,6 +8,7 @@
     --primary-color: #1185ea;
     --additional-grad-end: #A00F92;
     --primary-grad-end: #f6405e;
+    --blue-light: #0bceff;
     --lighter-black: #222222;
     --gray-theme: #D9D9D9;
     --echo-black: black;
@@ -423,12 +424,12 @@ footer > p,a{
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
-    transition: transform 2s;
+    transition: all 1s ease-in;
     /* transform: translateY(0); */
 }
 
 .iconbox.hidden {
-    transform: translateY(50%);
+    /* transform: translateY(50%); */
     opacity: 0;
 }
 
@@ -452,42 +453,66 @@ footer > p,a{
     margin: auto;
 }
 
-/* About the College */
+/* About the Event */
 
-
-#college-about {
-    height: 50rem;
-    background-image: url(./assets/images/college.jpg);
-    background-size: cover;
-    background-attachment: fixed;
+#about {
+    background: linear-gradient(225deg, var(--primary-color) 0%, var(--additional-grad-end) 100%);
+    /* height: 40rem; */
+    margin: 2rem;
+    border-radius: 2rem;
+    padding: 5rem;
     display: flex;
+    gap: 4rem;
     align-items: center;
-    justify-content: end;
-    padding: 5rem;
 }
 
-#college-about-content > h3 {
-    font-size: 3rem;
-    text-transform: uppercase;
-    margin-bottom: 2rem;
+#about > h3 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-size: 4rem;
     text-align: center;
+    color: white;
+    transition: .3s all ease-in;
 }
 
-#college-about-content {
-    padding: 5rem;
-    background: white;
-    width: 80%;
-    /* height: 100%; */
-    color: var(--lighter-black);
-    font-size: 1.5rem;
-    font-weight: 400;
+#about > h3.hidden {
+    opacity: 0;
+    
+}
+.upper-heading-span {
+    color: rgba(0, 0, 0, 0.301);
+    font-size: 4rem;
+}
+
+.lower-heading-span {
+    position: absolute;  
+    inset: 0;
+    inset-block-start: 25%;
+}
+
+#about-content {
     text-align: justify;
-    line-height: 4rem;
-    box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.3);
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    line-height: 2.5rem;
+    transition: 0.5s all ease-in;
+}
 
+#about-content.hidden {
+    opacity: 0;
+}
+
+#about-content > i {
+    color: var(--blue-light);
 }
 
 
+@media screen and (max-width:1024px) {
+    #about {
+        flex-direction: column;
+    }
+}
 /* Angle property for border animation */
 @property --angle {
     syntax: '<angle>';
@@ -1076,57 +1101,8 @@ h6{
     background-color: #EAEEF2;
 
 }
-/* About the College */
-.about{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    background-color: #EAEEF2;
-}
-.about-box{
-    width: 90vw;
-    display: flex;
-    background-color: var(--primary-text-color);
-    box-shadow: 0 8px 8px -4px var(--lighter-black);
-    margin: 2rem;
-    margin-bottom: 4rem;
-    padding: 2rem;
-    border-radius: 0.5rem;
 
-}
-@media screen and (max-width: 900px) {
 
-    .about-box{
-        display: block
-    }
-    .schedflex{
-        flex-direction: column;
-    }
-    .sideytvdo iframe{
-        width:fit-content;
-    }
-    
-}
-.sideytvdo{
-   
-   position: relative;
-}
-
-.about-text{
-    padding: 1rem;
-    
-}
-.about-text h1{
-    padding-bottom: 0.1rem;
- 
-    border-bottom: solid var(--echo-black);
-    width: max-content;
-    
-}
-.about-text p{
-    font-size: 1.5rem;
-    margin-top: 2.5rem;
-}
 
 
  /*  contact us  */

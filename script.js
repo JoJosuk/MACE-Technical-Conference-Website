@@ -102,6 +102,16 @@ const countDown = setInterval(() => {
 // })
 
 
+// About section
+
+let aboutContent = `<strong>IC@MACE 2023</strong> with a great honor extending you a warm invitation to attend the international colloquium on Advances in Engineering and Technology which is slated to be held on 16th and 17th June 2023 at Kothamangalam, India. <br><br>
+This colloquium will off a wide platform to share vital and recent advances in Engineering arena. Colloquium offer a wonderful space for both scientific presentations and  like oral, poster and commercial exhibitions. IC@MACE 2023 have an exciting schedule that will allow participants to reflect upon and celebrate the past accomplishments, renew friendships and extend networking opportunities, foster communication between speaker and delegates and jointly unevil current and future research directions. <br><br>In addition to this IC@MACE 2023 provide a platform for industrialists to share their research know-how and experience with the global communities. We hope that a useful and fun filled time in Kothamangalam, India . We look forward to welcome you all for what promises to be an outstanding event. 
+</br> </br> <i>Papers are invited to IC MACE 2023 on topics lying with the scope of the conference. The colloquium will offer multiple tracks in various Engineering and Management disciplines.</i> <br><br> 
+We are expecting quality research findings coming under these tracks and will also accept inter disciplinary Research papers. Selected papers from track will be published in Scopus Indexed International Journals`
+
+document.querySelector('#about-content').innerHTML = aboutContent
+
+
 // Schedule section
 
 const buttons = document.querySelectorAll("[data-carousel-button]")
