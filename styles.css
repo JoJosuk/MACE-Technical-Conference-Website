@@ -36,8 +36,13 @@ body {
     position: fixed;
     z-index: 99999;
     background: white;
+    opacity: 1;
 }
 
+#preloader-div.fade {
+    opacity: 0;
+    transition: .5s opacity;
+}
 #preloader{
     position:absolute;
     top:50%;

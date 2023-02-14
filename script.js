@@ -5,7 +5,7 @@
 
 window.onload = () => {
     let preloader = document.querySelector('#preloader-div')
-    preloader.style.display = "none"
+    preloader.classList.add('fade')
     document.querySelector('body').style.overflowY = "scroll"
 }
 
