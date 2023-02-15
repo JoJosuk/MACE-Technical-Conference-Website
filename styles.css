@@ -245,10 +245,17 @@ header {
 
 
 #hero-logo > img {
-    width: 30rem;
+    width: 40rem;
     /* height: 5rem; */
 }
-
+#hero-logo >h3{
+    
+    text-align: center;
+    font-size: medium;
+    margin-right: 3rem;
+    margin-top: -1.5rem;
+    font-weight: 500;
+}
 
 
 /* Hero Button */
