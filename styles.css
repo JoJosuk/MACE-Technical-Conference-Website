@@ -101,7 +101,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(./assets/images/heroimage2.jpg);
+    background-image: url(./assets/images/heroiamge.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -115,6 +115,7 @@ body {
     width: 100vw;
     height: 100vh;
     object-fit: fill;
+
 }
 
 
@@ -125,7 +126,7 @@ header {
     inset: 0 0 0 0;
     display: flex;
     padding: 4rem 2rem;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     height: 7rem;
 }
@@ -134,14 +135,14 @@ header {
 /* Nav Elements */
 
 .nav-logo {
-    height: 6rem;
+    height: 7rem;
 }
 
 .primary-navigation {
     display: flex;
     z-index: 1000;
-    gap: 1rem;
-    padding: .5rem;
+    gap: 4rem;
+    padding: 1rem;
     backdrop-filter: blur(2rem);
 }
 
@@ -175,14 +176,14 @@ header {
 .nav-link > a {
     text-decoration: none;
     text-transform: uppercase;
-    font-size: .9rem;
+    font-size: 1.2rem;
     font-weight: 500;
-    letter-spacing: .05rem;
-    color: var(--primary-text-color);
+    letter-spacing: .25rem;
+    color: rgb(255, 255, 255);
 }
 
 .nav-link > a:hover {
-    font-size: .95rem
+    color: black;
 }
 
 .nav-link[class*="active"] > a {
@@ -200,61 +201,93 @@ header {
     padding: 2rem;
     flex-direction: column;
     justify-content: center;
-    gap: 5rem;
+    align-items: center;
+    gap: 2rem;
 }
 
 /* For aligning the countdown and logo */
 #hero-cdandlogo {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    gap: 2rem;
 }
 
+
+#hero-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#hero-logo-content {
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    background: white;    
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#hero-logo-event-date {
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+
+#hero-scroll-logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 3rem;
+    background: linear-gradient(120deg, var(--blue-light), var(--additional-grad));
+    backdrop-filter: blur(2rem);
+    width: 40vw;
+}
+
+.hero-scroll-logo {
+    height: 10rem;
+}
+
+.hero-scroll-logo > img {
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+}
 
 /* Countdown Timer */
 
 #countdown-timer {
     padding: 2rem;
     display: grid;
-    aspect-ratio: 1 / 1;
-    background: linear-gradient(225.5deg, var(--primary-color) 0%, var(--primary-grad-end) 100%);
+    aspect-ratio: auto;
     border-radius: 1rem;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     column-gap: 2rem;
+    background: #0169c4;
+    /* background: linear-gradient(225.5deg, var(--primary-color) 0%, var(--primary-grad-end) 100%); */
     color: var(--primary-text-color);
     text-align: center;
+    order: 1;
 }
 
 
-#countdown-timer > hr {
-    grid-column: span 2;
-    margin: 1rem 0;
-    height: .3rem;
-    background: var(--primary-text-color);
-}
 
 .time-value {
     font-weight: 900;
-    font-size: 2.5rem;
+    font-size: 5rem;
 }
 
 .time-format {
     font-weight: 900;
-    font-size: 1.2rem;
-}
-
-
-#hero-logo > img {
-    width: 40rem;
-    /* height: 5rem; */
-}
-#hero-logo >h3{
-    
-    text-align: center;
-    font-size: medium;
-    margin-right: 3rem;
-    margin-top: -1.5rem;
-    font-weight: 500;
+    font-size: 1.5rem;
 }
 
 
@@ -279,10 +312,12 @@ header {
 #hero-overlay {
     position: absolute;
     top: 0;
-    background: #0000001d;
+    background: #00000040;
     height: 100vh;
     width: 100vw;
 }
+
+
 /* footer   */
 
 footer {
@@ -330,7 +365,7 @@ footer > p,a{
 
 @media screen and (max-width: 1920px) {
     html {
-        font-size: 90%;
+        font-size: 100%;
     }
 }
 
@@ -338,21 +373,15 @@ footer > p,a{
     html {
         font-size: 80%;
     }
+
+    .primary-navigation {
+        gap: 2rem;
+    }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 840px) {
     html {
         font-size: 60%;
-    }
-        
-}
-
-
-@media screen and (max-width: 480px) {
-    
-    
-    html {
-        font-size: 45%;
     }
 
     /* Navbar */
@@ -398,22 +427,15 @@ footer > p,a{
     .nav-logo {
         display: none;
     }
+        
+}
 
-    #hero-cdandlogo {
-        flex-direction: column;
-        gap: 10rem;
-    }
 
-    #countdown-timer {
-        order: 1;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        aspect-ratio: auto;
-        background: linear-gradient(90deg, var(--primary-color) 0%, var(--primary-grad-end) 100%);
-
-    }
-
-    #countdown-timer > hr {
-        display: none;
+@media screen and (max-width: 480px) {
+    
+    
+    html {
+        font-size: 45%;
     }
 
 
@@ -555,8 +577,8 @@ footer > p,a{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
-    font-size: 70px;
-    line-height: 90px;
+    font-size: 6rem;
+    line-height: 6rem;
     text-align: center;
     color: #FFFFFF;
     -webkit-text-stroke-width: 2px;
@@ -854,7 +876,7 @@ h6{
 
 }
 .shedbox{
-    width: 65%;
+    width: 75%;
 }
 .timeline{
     
@@ -1237,12 +1259,19 @@ h6{
   justify-content: flex-end;
   margin-left: auto;
   margin-right: 0;
+
   }
   
   .contact-GMap > iframe{
     height: 632px;
     width: 1036px;
     
+  }
+  @media (max-width: 450px){
+    contact-GMap{
+        width: 100%;
+    }
+
   }
   
   /* @media (min-width: 700px) {

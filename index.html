@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="./script.js" defer></script>
+
+    
 </head>
 <body>
 
@@ -21,7 +23,7 @@
     <section id="hero">
 
         <header>
-            <img class="nav-logo" src="./assets/logos/macelogo.png" alt="">
+            <!-- <img class="nav-logo" src="./assets/logos/macelogo.png" alt=""> -->
             <button title = "nav-toggle" id="nav-toggle" aria-expanded="false"></button>
             <ul class="primary-navigation" data-visible = "false">
                 <li class="nav-link active"><a href="/index.html">Home</a></li>
@@ -32,36 +34,40 @@
                 <li class="nav-link"><a href="/committee.html">Committee</a></li>
                 <li class="nav-link"><a href="">Connect</a></li>
             </ul>
-            <img class="nav-logo" src="./assets/logos/60 yrs MACE.png" alt="">
+            <!-- <img class="nav-logo" src="./assets/logos/60 yrs MACE.png" alt=""> -->
         </header>
-
+        
+        <div id="hero-overlay"></div>
 
         <div id="hero-content">
             <div id="hero-cdandlogo">
+                <div id="hero-logo">
+                    <h3 id="hero-logo-content">International Colloquim @ MACE</h3>
+                    <h3 id="hero-logo-event-date">17th June 2023 - Mar Athanasius College of Engineering, Kothamangalam</h3>
+                </div>
                 <div id="countdown-timer">
                     <p id="days"><span id="days-value" class="time-value"></span><br><span class="time-format">DAYS</span></p>
                     <p id="hours"><span id="hours-value" class="time-value"></span><br><span class="time-format">HOURS</span></p>
-                    <hr>
                     <p id="mins"><span id="mins-value" class="time-value"></span><br><span class="time-format">MINS</span></p>
                     <p id="secs"><span id="secs-value" class="time-value"></span><br><span class="time-format">SECS</span></p>
                 </div>
-                <div id="hero-logo">
-                    <img src="assets\logos\icatmace-transformed-transformed.png" alt="">
-                    <h3>JUNE 17-18 2023</h3>
-                </div>
             </div>
-            <button title="hero-button" id="hero-button" type="button">Register Now</button>
+            <div id="hero-scroll-logos">
+                <div class="hero-scroll-logo"><img src="./assets/logos/macelogo.png" alt=""></div>
+                <div class="hero-scroll-logo"><img src="./assets/logos/icatmace-transformed-transformed.png" alt=""></div>
+                <div class="hero-scroll-logo"><img src="./assets/logos/60 yrs MACE.png" alt=""></div>
+            </div>
+            <button title="hero-button" id="hero-button" type="button">Call for Papers</button>
         </div>
 
             
         </div>
 
-
+<!-- 
         <div id="hero-bg-video">
             <video src="./assets/videos/Blue - 9809.mp4" muted autoplay loop></video>
-        </div>
+        </div> -->
 
-        <div id="hero-overlay"></div>
     </section>
 
 
@@ -267,7 +273,7 @@
     </section>
 
 
-    <!-- <section class="contact-us">
+    <section class="contact-us">
         <div class="contact-form">
             <div class="wrapper">
                 <h3>GET IN TOUCH</h3>
@@ -298,7 +304,7 @@
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.5490927558367!2d76.61699471523204!3d10.054016892814145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b07e6154a2133e5%3A0x2c26b2d532bb30ea!2sMar%20Athanasius%20College%20of%20Engineering%20-%20Kothamangalam!5e0!3m2!1sen!2sin!4v1675614809724!5m2!1sen!2sin"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-    </section> -->
+    </section> 
 
     <footer>
         <div class="style-one">
