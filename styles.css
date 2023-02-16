@@ -851,7 +851,7 @@ h6{
     justify-content: center;
 }
 .shedbox{
-    background-image: url(./assets/images/IMG_9381.jpg);
+    background-image: url(./assets/images/mace-aerial-view.jpg);
     background-size: cover;
     background-position: center;
     margin-right: 2rem;
@@ -1423,7 +1423,7 @@ h6{
 .committee-card::after{
     content: "";
     background-color: black;
-    
+
 }
 
 .committee-card.hidden {
