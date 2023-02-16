@@ -1410,7 +1410,7 @@ h6{
     /* height: 15rem; */
     padding-bottom: 1rem;
     /* border-radius: 1rem; */
-    background-color: whitesmoke;
+    background-color: var(--gray-theme);
     width:17rem;
     transition: all 1s;
     overflow: hidden;
@@ -1427,7 +1427,7 @@ h6{
 
 .committee-card > img {
     object-fit: cover;
-    width: 100%;
+    width: 0;
 }
 
 .committee-card > p {
