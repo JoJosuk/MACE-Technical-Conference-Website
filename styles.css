@@ -365,14 +365,11 @@ footer > p,a{
 
 @media screen and (max-width: 1920px) {
     html {
-        font-size: 80%;
+        font-size: 70%;
     }
 }
 
 @media screen and (max-width: 1024px) {
-    html {
-        font-size: 80%;
-    }
 
     .primary-navigation {
         gap: 2rem;
