@@ -144,6 +144,7 @@ header {
     gap: 4rem;
     padding: 1rem;
     backdrop-filter: blur(2rem);
+    background: linear-gradient(225deg, var(--additional-grad-end) 0%, var(--additional-grad) 100%);
 }
 
 
@@ -176,7 +177,7 @@ header {
 .nav-link > a {
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     font-weight: 500;
     letter-spacing: .25rem;
     color: rgb(255, 255, 255);
@@ -226,13 +227,15 @@ header {
 #hero-logo-content {
     font-size: 5rem;
     text-transform: uppercase;
-    color: white;
+    /* color : #714bb9;
+     */
+     color: white;
     text-align: center;
     background: white;    
 
     -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: transparent;
+    /* -webkit-text-fill-color: transparent; */
 }
 
 #hero-logo-event-date {
@@ -248,13 +251,36 @@ header {
     padding: 2rem;
     border-radius: 3rem;
     /* background: linear-gradient(120deg, var(--blue-light), var(--additional-grad)); */
+    
     /* backdrop-filter: blur(2rem); */
     width: 90vw;
 }
 
-.hero-scroll-logo {
-    height: 10rem;
+.hero-scroll-logo:first-child {
+    height: 12rem;
+    width: 12rem;
+    padding: 1rem;
+    border-radius: 50%;
+    /* background: linear-gradient(225deg, var(--additional-grad-end) 0%, var(--additional-grad) 100%);
+    */
+    background: white;
+    
 }
+.hero-scroll-logo:last-child {
+    border-radius: 50%;
+    padding: 1rem;
+    width: 12rem;
+    height: 12rem;
+    /* background: linear-gradient(225deg, var(--additional-grad-end) 0%, var(--additional-grad) 100%); */
+    background: white;
+    
+}
+.hero-scroll-logo {
+    height: 20rem;
+    padding-top: 2rem;
+}
+
+
 
 .hero-scroll-logo > img {
     object-fit: fill;
