@@ -46,15 +46,6 @@ window.onscroll = function() {scrollfn()}
 
 var currentStick = document.querySelector('#hero').scrollHeight;
 
-function scrollfn() {
-    if (window.scrollY >= currentStick) {
-        primaryNavigation.classList.add("sticky")
-        primaryNavigation.style.backgroundColor = "#0bceff"
-    } else {
-        primaryNavigation.classList.remove("sticky")
-        primaryNavigation.style.backgroundColor = ""
-    }
-}
 
 // Navbar button reponse
 
@@ -70,6 +61,37 @@ navLinksAnchor.forEach((navLink) => {
 
 // Navbar updation on scroll
 
+let sections = document.querySelectorAll('section')
+console.log(sections)
+window.onscroll = () => {
+    if (window.scrollY >= currentStick) {
+        primaryNavigation.classList.add("sticky")
+        primaryNavigation.style.backgroundColor = "#0bceff"
+    } else {
+        primaryNavigation.classList.remove("sticky")
+        primaryNavigation.style.backgroundColor = ""
+    }
+    
+    let current = ""
+    
+    sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+
+        if (scrollY >= sectionTop) {
+            current = section.getAttribute("id")
+        }
+    })
+
+    navLinksAnchor.forEach((anchor) => {
+        let link = anchor.parentNode
+        link.classList.remove("active")
+        
+        if (link.classList.contains(current)) {
+            link.classList.add("active");
+        }
+
+    })
+}
 
 // let sections = document.querySelectorAll('section')
 

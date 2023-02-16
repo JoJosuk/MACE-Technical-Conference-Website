@@ -277,7 +277,7 @@ header {
 .hero-scroll-logo:first-child {
     height: 12rem;
     width: 12rem;
-    padding: 1rem;
+    padding: 1.5rem;
     border-radius: 50%;
     /* background: linear-gradient(225deg, var(--additional-grad-end) 0%, var(--additional-grad) 100%);
     */
@@ -287,7 +287,7 @@ header {
 
 .hero-scroll-logo:last-child {
     border-radius: 50%;
-    padding: 1rem;
+    padding: 2rem;
     width: 12rem;
     height: 12rem;
     /* background: linear-gradient(225deg, var(--additional-grad-end) 0%, var(--additional-grad) 100%); */
@@ -356,9 +356,10 @@ header {
 
 
 #hero-overlay {
+    display: none;
     position: absolute;
     top: 0;
-    background: #00000040;
+    background: #00000000;
     height: 100vh;
     width: 100vw;
 }
@@ -699,7 +700,7 @@ h2 {
 
 @media screen and (max-width: 500px) {
     #tracks-section {
-        padding: 3rem 9rem;
+        padding: 3rem 3rem;
     }
 }
 
