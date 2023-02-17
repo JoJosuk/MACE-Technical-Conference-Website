@@ -1683,3 +1683,21 @@ textarea {
         grid-template-columns: 1fr 1fr;
     }
 }
+
+
+#paperformat {
+    padding: 5rem;
+
+
+}
+
+#paperformat > p {
+    padding: 5rem;
+    font-size: 2rem;
+    text-align: justify;
+}
+
+#paperformat > h3 {
+    font-size: 4rem;
+    text-align: center;
+}

@@ -94,11 +94,15 @@ window.onscroll = () => {
 }
 
 
-heroButton = querySelector('#hero-button')
+let heroButton = document.querySelector('#hero-button')
+let path = "./assets/Paper Submission.pdf"
 
-heroButton.addEventListener(('click') => {
-    console.log('hello')
+if (heroButton != null) {
+heroButton.addEventListener(('click'), () => {
+    location.href = './callforpapers.html'
 })
+
+}
 // let sections = document.querySelectorAll('section')
 
 // Countdown Timer
