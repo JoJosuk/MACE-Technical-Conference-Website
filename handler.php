@@ -11,8 +11,10 @@ if(isset($_POST['submit'])){
     		"Message : " . $message;
     if(mail($to, $subject, $message , $headers)){
         echo "Mail Sent!";
+        echo "<a href=\"javascript:history.go(-1)\">GO BACK</a>";
     }else{
          echo "Failed To Send Mail";
+         echo "<a href=\"javascript:history.go(-1)\">GO BACK</a>";
     }
 }
 
