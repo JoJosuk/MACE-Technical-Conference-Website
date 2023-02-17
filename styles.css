@@ -266,17 +266,13 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 2rem;
     border-radius: 3rem;
-    /* background: linear-gradient(120deg, var(--blue-light), var(--additional-grad)); */
-
-    /* backdrop-filter: blur(2rem); */
     width: 90vw;
 }
 
 .hero-scroll-logo {
-    height: 12rem;
-    width: 12rem;
+    height: 10rem;
+    width: 10rem;
     padding: 1.5rem;
     border-radius: 50%;
     /* background: linear-gradient(225deg, var(--additional-grad-end) 0%, var(--additional-grad) 100%);
@@ -1565,7 +1561,7 @@ textarea {
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    background-image: url(./assets/images/abstract-image-of-blue-white-marbling.jpg);
+    /* background-image: url(./assets/images/abstract-image-of-blue-white-marbling.jpg); */
 
 }
 
@@ -1579,9 +1575,10 @@ textarea {
     /* height: 15rem; */
     padding-bottom: 1rem;
     padding: 1rem;
-    border: 2px solid black;
+    box-shadow: rgba(0, 0, 0, 0.406) 3px 3px;
+    /* border: 2px solid black; */
     /* border-radius: 1rem; */
-    background-color: var(--gray-theme);
+    background-color: white;
     border-radius: 0.75rem;
     width: 17rem;
     transition: all 0.5s;
