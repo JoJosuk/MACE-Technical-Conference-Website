@@ -5,9 +5,10 @@
     /* --primary-color : #FF6A00; */
     /* --primary-grad-end: #F6405E; */
     --primary-text-color: #fff;
-    --additional-grad: #1185ea;
+    --additional-grad: #B74EAA;
+    /* --additional-grad: #1185ea; */
     --primary-color: #1185ea;
-    --additional-grad-end: #A00F92;
+    --additional-grad-end: #7266DF;
     --primary-grad-end: #f6405e;
     --blue-light: #0bceff;
     --lighter-black: #222222;
@@ -159,8 +160,9 @@ header {
 .primary-navigation {
     display: flex;
     z-index: 1000;
+    border-radius: 2rem;
     gap: 4rem;
-    padding: 1rem;
+    padding: 1rem 3rem;
     backdrop-filter: blur(2rem);
     background: linear-gradient(225deg, var(--additional-grad-end) 0%, var(--additional-grad) 100%);
 }
@@ -243,11 +245,11 @@ header {
 }
 
 #hero-logo-content {
-    font-size: 4.5rem;
+    font-size: 4rem;
     text-transform: uppercase;
-    /* color : #714bb9;
-     */
-    color: white;
+    /* color: white; */
+    color: var(--additional-grad);
+
     text-align: center;
     background: white;
 
@@ -259,6 +261,7 @@ header {
 #hero-logo-event-date {
     font-size: 2rem;
     text-align: center;
+    color: white;
 }
 
 
@@ -288,8 +291,8 @@ header {
 }
 
 #event-heading > h3 {
-    font-size: 4rem;
-    color: var(--echo-black);
+    font-size: 6rem;
+    color: white;
 }
 
 .hero-non-scroll-logo {
@@ -330,12 +333,12 @@ header {
 
 .time-value {
     font-weight: 900;
-    font-size: 5rem;
+    font-size: 3.5rem;
 }
 
 .time-format {
     font-weight: 900;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 
