@@ -919,7 +919,7 @@ h6 {
 .cardTop {
     width: 497px;
     height: 284px;
-    background: #FAC24F;
+    background: linear-gradient(180);
     border-radius: 20px;
     display: flex;
     overflow: hidden;
