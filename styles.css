@@ -243,7 +243,7 @@ header {
 }
 
 #hero-logo-content {
-    font-size: 5rem;
+    font-size: 4.5rem;
     text-transform: uppercase;
     /* color : #714bb9;
      */
@@ -274,7 +274,7 @@ header {
     width: 90vw;
 }
 
-.hero-scroll-logo:first-child {
+.hero-scroll-logo {
     height: 12rem;
     width: 12rem;
     padding: 1.5rem;
@@ -285,23 +285,28 @@ header {
 
 }
 
-.hero-scroll-logo:last-child {
-    border-radius: 50%;
-    padding: 2rem;
-    width: 12rem;
-    height: 12rem;
-    /* background: linear-gradient(225deg, var(--additional-grad-end) 0%, var(--additional-grad) 100%); */
-    background: white;
-
+#event-heading {
+    display: flex;
+    align-items: center;
 }
 
-.hero-scroll-logo {
-    height: 20rem;
+#event-heading > h3 {
+    font-size: 4rem;
+    color: var(--additional-grad-end);
+}
+
+.hero-non-scroll-logo {
+    height: 10rem;
     padding-top: 2rem;
 }
 
 
 
+.hero-non-scroll-logo>img {
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+}
 .hero-scroll-logo>img {
     object-fit: fill;
     width: 100%;
