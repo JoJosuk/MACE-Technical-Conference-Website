@@ -652,7 +652,8 @@ h2 {
 
 #about-content {
     font-family: Open Sans;
-    padding-left: 15px;
+    padding-left: 1rem;
+    padding: 2rem;
     text-align: justify;
     font-size: 18px;
     color: white;
