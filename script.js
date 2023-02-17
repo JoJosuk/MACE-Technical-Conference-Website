@@ -93,6 +93,12 @@ window.onscroll = () => {
     })
 }
 
+
+heroButton = querySelector('#hero-button')
+
+heroButton.addEventListener(('click') => {
+    console.log('hello')
+})
 // let sections = document.querySelectorAll('section')
 
 // Countdown Timer
