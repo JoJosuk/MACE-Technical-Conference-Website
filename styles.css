@@ -676,6 +676,18 @@ h2 {
     #about {
         flex-direction: column;
     }
+    #about-content {
+        font-family: Open Sans;
+        padding-left: 1rem;
+        padding: 2rem;
+        text-align: justify;
+        font-size: 1.5rem;
+        color: white;
+        line-height: 2rem;
+        transition: 0.5s all ease-in;
+        border :0px;
+    }
+
 }
 
 /* Angle property for border animation */
