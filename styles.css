@@ -288,15 +288,16 @@ header {
 #event-heading {
     display: flex;
     align-items: center;
+    gap: 2rem;
 }
 
 #event-heading > h3 {
     font-size: 4rem;
-    color: var(--additional-grad-end);
+    color: var(--echo-black);
 }
 
 .hero-non-scroll-logo {
-    height: 10rem;
+    height: 7rem;
     padding-top: 2rem;
 }
 
