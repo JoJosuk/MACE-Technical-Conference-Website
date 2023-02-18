@@ -1703,5 +1703,17 @@ textarea {
 }
 
 #registration-fee-table {
-    
+    font-size: 2rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    margin: auto;
+    padding: 1rem;
+}
+
+td {
+    padding: 1rem;
+}
+
+#registration-fee-table tr td {
+    border: 1px solid black;
 }
