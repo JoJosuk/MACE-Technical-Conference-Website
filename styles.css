@@ -1686,8 +1686,11 @@ textarea {
 
 
 #paperformat {
-    padding: 5rem;
-
+    padding: 4rem;
+    padding-top: 3rem;
+    background-color: white;
+    margin:4rem;
+    border-radius: 0.75rem;
 
 }
 
