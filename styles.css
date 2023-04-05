@@ -1343,13 +1343,13 @@ h6 {
 }
 
 .speaker-name {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 700;
 }
 
 .speaker-desc {
     font-size: 1.1rem;
-    font-weight: 400;
+    font-weight: bold;
 }
 
 .speaker>hr {
