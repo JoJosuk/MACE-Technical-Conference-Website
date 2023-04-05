@@ -1275,12 +1275,14 @@ h6 {
 #speakers {
     display: grid;
     padding: 4rem;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     place-items: center;
     row-gap: 3rem;
     column-gap: 2rem;
 
 }
+
+
 
 
 
@@ -1394,7 +1396,7 @@ h6 {
     justify-content: space-between;
     height: 632px;
     background-color: #000000;
-    flex-wrap: wrap;
+    
 }
 
 .contact-form {
@@ -1449,9 +1451,16 @@ h6 {
 
 @media (max-width: 1050px) {
     .contact-form {
-        width: 615px;
+        width: 100%;
+        
+    }
+    .contact-us{
+        flex-direction: column;
+        width: 100vw;
     }
 }
+
+
 
 /* @media (min-width: 700px) {
   .wrapper {
