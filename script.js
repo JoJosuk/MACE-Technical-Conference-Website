@@ -155,17 +155,17 @@ carouselDots.forEach(dot => dot.addEventListener('click', (e) => {
 
 // Autocarousel
 
-// setInterval(() => {
+setInterval(() => {
     
-//     let newIndex = currentIndex + 1
-//     if (newIndex >= cards.length) {
-//         newIndex = 0;
-//     }
+    let newIndex = currentIndex + 1
+    if (newIndex >= cards.length) {
+        newIndex = 0;
+    }
 
-//     activate(newIndex)
-//     currentIndex = newIndex;
+    activate(newIndex)
+    currentIndex = newIndex;
 
-// }, 2000);
+}, 5000);
 
 
 function activate(newIndex) {
