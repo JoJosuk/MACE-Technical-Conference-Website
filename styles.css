@@ -214,17 +214,57 @@ header {
 
 /* Hero Content */
 
-#hero-content {
-    position: absolute;
-    margin-top: 5rem;
+#hero-content-carousel {
+    position: relative;
     width: 100%;
+    height: 100%;
+    margin-top: 10%;
+}
+
+
+.hero-content {
     display: flex;
+    position: absolute;
     padding: 2rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100vw;
     gap: 2rem;
+    transform: translateX(100%);
+    transition: transform .7s ease-in-out;
 }
+
+.hero-content.active {
+    transform: translateX(0);
+}
+
+
+#hero-carousel-dots  {
+    width: 10rem;
+    position: absolute;
+    left: calc(50% - 5rem);
+    bottom: 10%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#hero-carousel-dots > span {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background: white;
+    
+}
+
+#hero-carousel-dots > span.active {
+    background: var(--additional-grad);
+}
+
+
+
+
 
 /* For aligning the countdown and logo */
 #hero-cdandlogo {

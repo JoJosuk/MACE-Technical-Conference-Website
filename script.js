@@ -62,7 +62,7 @@ navLinksAnchor.forEach((navLink) => {
 // Navbar updation on scroll
 
 let sections = document.querySelectorAll('section')
-console.log(sections)
+// console.log(sections)
 window.onscroll = () => {
     if (window.scrollY >= currentStick) {
         primaryNavigation.classList.add("sticky")
@@ -103,6 +103,10 @@ heroButton.addEventListener(('click'), () => {
 })
 
 }
+
+
+
+
 // let sections = document.querySelectorAll('section')
 
 // Countdown Timer
@@ -132,6 +136,47 @@ const countDown = setInterval(() => {
 // document.querySelector('#hero-button').addEventListener('click', () => {
 //     console.log('hello')
 // })
+
+// Hero Content Carousel
+
+const n_cards = 3;
+let currentIndex = 0;
+
+let carousel = document.querySelector('#hero-content-carousel');
+let cards = carousel.querySelectorAll('.hero-content')
+
+let carouselDotsSection = document.querySelector("#hero-carousel-dots")
+let carouselDots = carouselDotsSection.querySelectorAll('span')
+// console.log(carouselDots)
+
+carouselDots.forEach(dot => dot.addEventListener('click', (e) => {
+    activate(e.target.dataset.index);    
+}))
+
+// Autocarousel
+
+// setInterval(() => {
+    
+//     let newIndex = currentIndex + 1
+//     if (newIndex >= cards.length) {
+//         newIndex = 0;
+//     }
+
+//     activate(newIndex)
+//     currentIndex = newIndex;
+
+// }, 2000);
+
+
+function activate(newIndex) {
+    carouselDots[currentIndex].classList.remove('active');
+    cards[currentIndex].classList.remove('active');
+    currentIndex = newIndex;
+    carouselDots[currentIndex].classList.add('active');
+    cards[currentIndex].classList.add('active');
+}
+
+
 
 
 // About section
