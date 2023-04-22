@@ -289,6 +289,58 @@ header {
 }
 
 
+#hero-image-gallery {
+    width: 90%;
+    height: 60vh;
+    /* background-color:black; */
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+
+#hero-image-gallery > div {
+    width: 50%;
+    height: 100%;
+    /* flex: 1; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+#hero-image-gallery > div:first-child {
+    animation: scrollerup infinite linear 10s;
+}
+
+#hero-image-gallery > div:last-child {
+    animation: scrollerdown infinite linear 10s;
+}
+
+
+
+#hero-image-gallery > div > img {
+    width: 80%;
+}
+
+@keyframes scrollerup {
+    from {
+        transform: translateY(0%);
+    }
+    to {
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes scrollerdown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+
 #hero-carousel-dots  {
     width: 10rem;
     position: absolute;

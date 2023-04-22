@@ -165,7 +165,7 @@ setInterval(() => {
     activate(newIndex)
     currentIndex = newIndex;
 
-}, 5000);
+}, 6000);
 
 
 function activate(newIndex) {
